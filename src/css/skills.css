@@ -1,0 +1,122 @@
+#bigContainer {
+	background-color: #393e46;
+	font-family: 'Allerta Stencil', sans-serif;
+}
+
+#expertiseContainer {
+	text-align: center;
+	padding-top: 2em;
+	font-size: 3em;
+	color: #eeeeee;
+	padding-bottom: 1em;
+}
+
+#skillsContainer {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	padding: 0 1em;
+}
+
+.mySkill {
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 0.4em;
+	width: 15em;
+}
+
+.mySkillOverlay {
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 0.4em;
+	width: 15em;
+	transform: scale(0.9);
+  	transition: transform .35s ease;
+  	/* background-color: black; */
+	opacity: 0.7;
+}
+
+.skillsItem {
+	display: inline-block;
+	flex-basis: content;
+	margin-right: 0.5em;
+	margin-top: 2em;
+	border-radius: 10%;
+	width: 15em;
+	height: 15em;
+	background-color:#000000;
+}
+
+.skillText {
+	display: none;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	color: #ffffff;
+}
+
+.skillText:hover, skillsItem:hover {
+
+}
+
+#javascript {
+	content: url("../images/javascript.png")
+}
+
+#react {
+	content: url("../images/react.png")
+}
+
+#react-native {
+	content: url("../images/react-native.png")
+}
+
+#node {
+	content: url("../images/nodejs.png")
+}
+
+#swift {
+	content: url("../images/swift.png")
+}
+
+#jquery {
+	content: url("../images/jQuery.png")
+}
+
+#bootstrap {
+	content: url("../images/Bootstrap.png")
+}
+
+#postgresql {
+	content: url("../images/postgreSQL.png")
+}
+
+#html5 {
+	content: url("../images/html.png")
+}
+
+#css3 {
+	content: url("../images/css.png")
+}
+
+#firebase {
+	content: url("../images/firebase.png")
+}
+
+#aws {
+	content: url("../images/aws.png")
+}
+
+#heroku {
+	content: url("../images/heroku.png")
+}
+
+#git {
+	content: url("../images/git.png")
+}
+
+#github {
+	content: url("../images/github.png")
+}
+
+
+
