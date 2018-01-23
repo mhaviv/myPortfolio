@@ -5,32 +5,16 @@ class SkillsChild extends Component {
 	constructor(props) {
 	  super(props);
 
-	  this.state = {
-	  	overlayOn: false
-	  };
+	  this.state = {};
 	}
-
-	skillOverlayToggleOn() {
-		this.setState(currentState => ({
-			overlayOn: true
-		}), () => console.log(`Toggling visibility of Overlay!: ${this.state.overlayOn}`))
-	}
-	skillOverlayToggleOff() {
-		this.setState(currentState => ({
-			overlayOn: false
-		}), () => console.log(`Toggling visibility of Overlay!: ${this.state.overlayOn}`))
-	}
-
 
 	render() {
 
 
 		return (
-			<ul>
+			<ul className="padRemove">
 				<li
-					className={this.state.overlayOn ? "mySkillOverlay" : "mySkill"}
-					onMouseEnter={this.skillOverlayToggleOn.bind(this)}
-					onMouseLeave={this.skillOverlayToggleOff.bind(this)}
+					className="mySkill"
 				>
 					<div
 						className="skillsItem"
@@ -45,9 +29,7 @@ class SkillsChild extends Component {
 					</div>
 				</li>
 				<li
-					className={this.state.overlayOn ? "mySkillOverlay" : "mySkill"}
-					onMouseEnter={this.skillOverlayToggleOn.bind(this)}
-					onMouseLeave={this.skillOverlayToggleOff.bind(this)}
+					className="mySkill"
 				>
 					<div
 						className="skillsItem"
@@ -61,10 +43,8 @@ class SkillsChild extends Component {
 						React
 					</div>
 				</li>
-				<li 
-					className={this.state.overlayOn ? "mySkillOverlay" : "mySkill"}
-					onMouseEnter={this.skillOverlayToggleOn.bind(this)}
-					onMouseLeave={this.skillOverlayToggleOff.bind(this)}
+				<li
+					className="mySkill"
 				>
 					<div
 						className="skillsItem"
@@ -78,10 +58,8 @@ class SkillsChild extends Component {
 						React Native
 					</div>
 				</li>
-				<li 
-					className={this.state.overlayOn ? "mySkillOverlay" : "mySkill"}
-					onMouseEnter={this.skillOverlayToggleOn.bind(this)}
-					onMouseLeave={this.skillOverlayToggleOff.bind(this)}
+				<li
+					className="mySkill"
 				>
 					<div
 						className="skillsItem"
@@ -95,10 +73,8 @@ class SkillsChild extends Component {
 						Node.js
 					</div>
 				</li>
-				<li 
-					className={this.state.overlayOn ? "mySkillOverlay" : "mySkill"}
-					onMouseEnter={this.skillOverlayToggleOn.bind(this)}
-					onMouseLeave={this.skillOverlayToggleOff.bind(this)}
+				<li
+					className="mySkill"
 				>
 					<div
 						className="skillsItem"
@@ -112,10 +88,8 @@ class SkillsChild extends Component {
 						Swift
 					</div>
 				</li>
-				<li 
-					className={this.state.overlayOn ? "mySkillOverlay" : "mySkill"}
-					onMouseEnter={this.skillOverlayToggleOn.bind(this)}
-					onMouseLeave={this.skillOverlayToggleOff.bind(this)}
+				<li
+					className="mySkill"
 				>
 					<div
 						className="skillsItem"
@@ -129,10 +103,8 @@ class SkillsChild extends Component {
 						jQuery
 					</div>
 				</li>
-				<li 
-					className={this.state.overlayOn ? "mySkillOverlay" : "mySkill"}
-					onMouseEnter={this.skillOverlayToggleOn.bind(this)}
-					onMouseLeave={this.skillOverlayToggleOff.bind(this)}
+				<li
+					className="mySkill"
 				>
 					<div
 						className="skillsItem"
@@ -146,10 +118,8 @@ class SkillsChild extends Component {
 						Bootstrap
 					</div>
 				</li>
-				<li 
-					className={this.state.overlayOn ? "mySkillOverlay" : "mySkill"}
-					onMouseEnter={this.skillOverlayToggleOn.bind(this)}
-					onMouseLeave={this.skillOverlayToggleOff.bind(this)}
+				<li
+					className="mySkill"
 				>
 					<div
 						className="skillsItem"
@@ -163,10 +133,8 @@ class SkillsChild extends Component {
 						PostgreSQL
 					</div>
 				</li>
-				<li 
-					className={this.state.overlayOn ? "mySkillOverlay" : "mySkill"}
-					onMouseEnter={this.skillOverlayToggleOn.bind(this)}
-					onMouseLeave={this.skillOverlayToggleOff.bind(this)}
+				<li
+					className="mySkill"
 				>
 					<div
 						className="skillsItem"
@@ -180,10 +148,8 @@ class SkillsChild extends Component {
 						HTML5
 					</div>
 				</li>
-				<li 
-					className={this.state.overlayOn ? "mySkillOverlay" : "mySkill"}
-					onMouseEnter={this.skillOverlayToggleOn.bind(this)}
-					onMouseLeave={this.skillOverlayToggleOff.bind(this)}
+				<li
+					className="mySkill"
 				>
 					<div
 						className="skillsItem"
@@ -197,10 +163,8 @@ class SkillsChild extends Component {
 						CSS3
 					</div>
 				</li>
-				<li 
-					className={this.state.overlayOn ? "mySkillOverlay" : "mySkill"}
-					onMouseEnter={this.skillOverlayToggleOn.bind(this)}
-					onMouseLeave={this.skillOverlayToggleOff.bind(this)}
+				<li
+					className="mySkill"
 				>
 					<div
 						className="skillsItem"
@@ -214,10 +178,8 @@ class SkillsChild extends Component {
 						Firebase
 					</div>
 				</li>
-				<li 
-					className={this.state.overlayOn ? "mySkillOverlay" : "mySkill"}
-					onMouseEnter={this.skillOverlayToggleOn.bind(this)}
-					onMouseLeave={this.skillOverlayToggleOff.bind(this)}
+				<li
+					className="mySkill"
 				>
 					<div
 						className="skillsItem"
@@ -231,10 +193,8 @@ class SkillsChild extends Component {
 						Amazon Web Services
 					</div>
 				</li>
-				<li 
-					className={this.state.overlayOn ? "mySkillOverlay" : "mySkill"}
-					onMouseEnter={this.skillOverlayToggleOn.bind(this)}
-					onMouseLeave={this.skillOverlayToggleOff.bind(this)}
+				{/*<li
+					className="mySkill"
 				>
 					<div
 						className="skillsItem"
@@ -248,10 +208,8 @@ class SkillsChild extends Component {
 						Heroku
 					</div>
 				</li>
-				<li 
-					className={this.state.overlayOn ? "mySkillOverlay" : "mySkill"}
-					onMouseEnter={this.skillOverlayToggleOn.bind(this)}
-					onMouseLeave={this.skillOverlayToggleOff.bind(this)}
+				<li
+					className="mySkill"
 				>
 					<div
 						className="skillsItem"
@@ -265,10 +223,8 @@ class SkillsChild extends Component {
 						Git
 					</div>
 				</li>
-				<li 
-					className={this.state.overlayOn ? "mySkillOverlay" : "mySkill"}
-					onMouseEnter={this.skillOverlayToggleOn.bind(this)}
-					onMouseLeave={this.skillOverlayToggleOff.bind(this)}
+				<li
+					className="mySkill"
 				>
 					<div
 						className="skillsItem"
@@ -281,7 +237,7 @@ class SkillsChild extends Component {
 					>
 						Github
 					</div>
-				</li>
+				</li>*/}
 			</ul>
 		)
 	}

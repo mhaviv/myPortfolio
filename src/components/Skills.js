@@ -22,9 +22,6 @@ class Skills extends Component {
 			"Css3",
 			"Firebase",
 			"Amazon Web Services",
-			"Heroku",
-			"Git",
-			"Github"
 	  	]
 	  };
 	  this.renderSkillsChildren = this.renderSkillsChildren.bind(this)

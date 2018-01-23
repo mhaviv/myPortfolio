@@ -1,0 +1,193 @@
+#aboutContainer {
+	font-family: 'Roboto';
+	text-align: center;
+	color: #dddddd;
+	background-color: #eeeeee;
+   	z-index: -3;
+   	top: 0;
+   	bottom: 0;
+   	left: 0;
+   	right: 0;
+	background-image: url('../images/background.png');
+	background-repeat: no-repeat;
+   	background-size: cover;
+   	background-position: center center;
+	font-size: 3em;
+	padding: 3.5em 3em;
+	line-height: 1.5;
+}
+
+.introDivs {
+	/* font-weight: lighter; */
+}
+
+.standOut {
+	font-family: 'Allerta Stencil';
+	color: #ffffff;
+	font-size: 1.1em;
+	padding-left: 0.3em;
+	text-shadow: 2.7px 2.7px #000000;
+}
+
+#introContainer {
+	background-color: rgba(34, 40, 49, 0.6);
+	padding: 1em 0.3em;
+	text-shadow: 1.5px 1.5px #000000;
+}
+
+#portStandOut {
+	border-bottom: 1.3px solid;
+	text-shadow: 2px 2px #000000;
+}
+
+#portStandOut:hover {
+	color: #00adb5;
+}
+
+.padPort {
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+}
+
+.padPort2 {
+	padding-left: 0.3em;
+}
+
+@media (max-width: 1280px) {
+	#aboutContainer {
+		font-size: 2.9em;
+	}
+}
+
+@media (min-width: 1194px) and (max-width: 1280px){
+	#aboutContainer {
+		font-size: 2.8em;
+	}
+}
+
+@media (min-width: 1153px) and (max-width: 1194px){
+	#aboutContainer {
+		font-size: 2.7em;
+	}
+}
+
+@media (min-width: 1109px) and (max-width: 1153px){
+	#aboutContainer {
+		font-size: 2.6em;
+	}
+}
+
+@media (min-width: 1064px) and (max-width: 1109px){
+	#aboutContainer {
+		font-size: 2.5em;
+	}
+}
+
+@media (min-width: 1022px) and (max-width: 1064px){
+	#aboutContainer {
+		font-size: 2.4em;
+	}
+}
+
+@media (min-width: 980px) and (max-width: 1022px){
+	#aboutContainer {
+		font-size: 2.3em;
+	}
+}
+
+@media (min-width: 937px) and (max-width: 980px){
+	#aboutContainer {
+		font-size: 2.2em;
+	}
+}
+
+@media (min-width: 895px) and (max-width: 937px){
+	#aboutContainer {
+		font-size: 2.1em;
+	}
+}
+
+@media (min-width: 852px) and (max-width: 895px){
+	#aboutContainer {
+		font-size: 2em;
+	}
+}
+
+@media (min-width: 811px) and (max-width: 852px){
+	#aboutContainer {
+		font-size: 1.9em;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 811px){
+	#aboutContainer {
+		font-size: 1.8em;
+	}
+}
+
+@media (min-width: 725px) and (max-width: 768px){
+	#aboutContainer {
+		font-size: 1.7em;
+	}
+}
+
+@media (min-width: 682px) and (max-width: 725px){
+	#aboutContainer {
+		font-size: 1.6em;
+	}
+}
+
+@media (min-width: 638px) and (max-width: 682px){
+	#aboutContainer {
+		font-size: 1.5em;
+	}
+}
+
+@media (min-width: 596px) and (max-width: 638px){
+	#aboutContainer {
+		font-size: 1.4em;
+	}
+}
+
+@media (min-width: 555px) and (max-width: 596px){
+	#aboutContainer {
+		font-size: 1.3em;
+	}
+}
+
+@media (min-width: 511px) and (max-width: 555px){
+	#aboutContainer {
+		font-size: 1.2em;
+	}
+}
+
+@media (min-width: 471px) and (max-width: 511px){
+	#aboutContainer {
+		font-size: 1.1em;
+	}
+}
+
+@media (min-width: 426px) and (max-width: 471px){
+	#aboutContainer {
+		font-size: 1em;
+	}
+}
+
+@media (min-width: 386px) and (max-width: 426px){
+	#aboutContainer {
+		font-size: 0.9em;
+	}
+}
+
+@media (min-width: 346px) and (max-width: 386px){
+	#aboutContainer {
+		font-size: 0.8em;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 346px){
+	#aboutContainer {
+		font-size: 0.7em;
+	}
+}
+

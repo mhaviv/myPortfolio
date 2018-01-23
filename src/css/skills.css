@@ -15,25 +15,15 @@
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	padding: 0 1em;
+	padding: 0 0 2em 0;
+	text-align: center;
 }
 
 .mySkill {
 	list-style-type: none;
 	display: inline-block;
 	margin-right: 0.4em;
-	width: 15em;
-}
-
-.mySkillOverlay {
-	list-style-type: none;
-	display: inline-block;
-	margin-right: 0.4em;
-	width: 15em;
-	transform: scale(0.9);
-  	transition: transform .35s ease;
-  	/* background-color: black; */
-	opacity: 0.7;
+	width: 11em;
 }
 
 .skillsItem {
@@ -42,24 +32,28 @@
 	margin-right: 0.5em;
 	margin-top: 2em;
 	border-radius: 10%;
-	width: 15em;
-	height: 15em;
+	width: 11em;
+	height: 11em;
 	background-color:#000000;
 }
 
 .skillText {
-	display: none;
+	display: inline-block;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1em;
 	color: #ffffff;
+	padding: 0 2em;
 }
 
-.skillText:hover, skillsItem:hover {
-
+.skillsItem:hover {
+	transform: scale(0.9);
+  	transition: transform .35s ease;
+  	/* background-color: black; */
+	opacity: 0.7;
 }
 
 #javascript {
-	content: url("../images/javascript.png")
+	content: url("../images/javascript.png");
 }
 
 #react {
@@ -106,17 +100,174 @@
 	content: url("../images/aws.png")
 }
 
-#heroku {
-	content: url("../images/heroku.png")
+@media (max-width: 894px) {
+	/* #expertiseContainer {
+		font-size: 3em;
+	} */
 }
 
-#git {
-	content: url("../images/git.png")
+/* media queries for expertise header */
+
+@media (min-width: 800px) and (max-width: 894px){
+	#expertiseContainer {
+		font-size: 2.6em;
+	}
 }
 
-#github {
-	content: url("../images/github.png")
+@media (min-width: 696px) and (max-width: 800px){
+	#expertiseContainer {
+		font-size: 2.2em;
+	}
 }
 
+@media (min-width: 559px) and (max-width: 696px){
+	#expertiseContainer {
+		font-size: 2em;
+	}
+}
 
+@media (min-width: 473px) and (max-width: 559px){
+	#expertiseContainer {
+		font-size: 1.8em;
+	}
+}
 
+@media (min-width: 406px) and (max-width: 473px){
+	#expertiseContainer {
+		font-size: 1.6em;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 406px){
+	#expertiseContainer {
+		font-size: 1.4em;
+	}
+}
+
+/* media queries for skills */
+
+@media (min-width: 1144px) and (max-width: 1160px){
+	.skillsItem {
+		width: 10em;
+		height: 10em;
+	}
+}
+
+@media (min-width: 1135px) and (max-width: 1144px){
+	.skillsItem {
+		width: 7em;
+		height: 7em;
+		/* margin-left: 1.5em; */
+	}
+
+	.skillText {
+		font-size: 0.9em;
+	}
+}
+
+@media (min-width: 969px) and (max-width: 1135px){
+	.skillText {
+		font-size: 0.8em;
+	}
+}
+
+@media (min-width: 952px) and (max-width: 969px){
+	.skillsItem {
+		width: 6em;
+		height: 6em;
+		/* margin-left: 1em; */
+	}
+
+	.skillText {
+		font-size: 0.7em;
+		padding: 0 2.3em;
+	}
+}
+
+@media (min-width: 772px) and (max-width: 952px){
+	.skillsItem {
+		width: 6em;
+		height: 6em;
+		/* margin-left: 1em; */
+	}
+
+	.skillText {
+		font-size: 0.7em;
+		padding: 0 2.3em;
+	}
+}
+
+@media (min-width: 590px) and (max-width: 772px){
+	.padRemove {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.mySkill {
+		list-style-type: none;
+		display: inline-block;
+		margin-right: 0.4em;
+		width: 8em;
+	}
+
+	.skillsItem {
+		width: 5em;
+		height: 5em;
+		/* margin-left: 1em; */
+	}
+
+	.skillText {
+		font-size: 0.6em;
+		padding: 0 3.6em;
+	}
+}
+
+@media (min-width: 412px) and (max-width: 590px){
+	.padRemove {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.mySkill {
+		list-style-type: none;
+		display: inline-block;
+		margin-right: 0.4em;
+		width: 5em;
+	}
+
+	.skillsItem {
+		width: 4em;
+		height: 4em;
+		/* margin-left: 1em; */
+	}
+
+	.skillText {
+		font-size: 0em;
+		padding: 0 6em;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 412px){
+	.padRemove {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.mySkill {
+		list-style-type: none;
+		display: inline-block;
+		margin-right: 0.4em;
+		width: 3.5em;
+	}
+
+	.skillsItem {
+		width: 3em;
+		height: 3em;
+		/* margin-left: 1em; */
+	}
+
+	.skillText {
+		font-size: 0em;
+		padding: 0 6.5em;
+	}
+}
