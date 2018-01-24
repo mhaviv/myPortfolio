@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import "../css/header.css";
-import Skills from './Skills';
-import Portfolio from './Portfolio';
-import Contact from './Contact';
-import About from './About';
+// import Skills from './Skills';
+// import Portfolio from './Portfolio';
+// import Contact from './Contact';
+// import About from './About';
 import { BrowserRouter } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 

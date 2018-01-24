@@ -27,7 +27,7 @@ class Portfolio extends Component {
 							className="nameSize"
 							id="tunesendSize"
 						>
-							<span class="titleStyle">
+							<span className="titleStyle">
 								Tune
 							</span>
 							<span id="sendColor">

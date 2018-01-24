@@ -9,6 +9,30 @@
 	background-color: #eeeeee;
 }
 
+.formHide {
+	visibility: hidden;
+	display: none;
+}
+
+.formShow {
+	visibility: visible
+}
+
+.thankYouOff {
+	visibility: hidden;
+	display: none;
+}
+
+.thankYouOn {
+	visibility: visible;
+	color: #00adb5;
+	/* font-family: 'Allerta Stencil'; */
+	text-align: center;
+	font-size: 6em;
+	font-weight: bold;
+	margin: 2em 4em;
+}
+
 .labelContainer {
 	width: 26em;
 	align-items: flex-start;
@@ -55,6 +79,14 @@
 	margin-top: 0.2em;
 }
 
+.footerStyle {
+	background-color: #eeeeee;
+	text-align: center;
+	padding: 2em 2em;
+	font-size: 1em;
+	color: #00adb5;
+}
+
 @media (min-width: 418px) and (max-width: 685px){
 	#quesWorkTog {
 		font-size: 1.7em;
@@ -83,6 +115,10 @@
 		margin: 1em 0;
 		border-width: 0.1em;
 		border-radius: 10px;
+	}
+
+	.footerStyle {
+		font-size: 0.85em;
 	}
 }
 
@@ -114,6 +150,10 @@
 		margin: 1em 0;
 		border-width: 0.1em;
 		border-radius: 10px;
+	}
+
+	.footerStyle {
+		font-size: 0.65em;
 	}
 }
 

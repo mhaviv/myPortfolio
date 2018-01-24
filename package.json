@@ -4,7 +4,10 @@
   "private": true,
   "dependencies": {
     "animate.css": "^3.5.2",
+    "axios": "^0.17.1",
     "express-generator": "^4.15.5",
+    "firebase": "^4.9.0",
+    "nodemailer": "^4.4.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router": "^4.2.0",
