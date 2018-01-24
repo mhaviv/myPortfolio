@@ -201,7 +201,7 @@
 	font-family: 'Roboto';
 	font-size: 0.4em;
 	width: 13em;
-	padding: 0.5em 3em;
+	padding: 0.5em 3.2em;
 	list-style-type: none;
 	line-height: 1.4;
 	margin: 0;
@@ -295,7 +295,7 @@
 	border-width: 0.14em;
 	background-color: rgba(0,0,0,0.0);
 	transition: all .3s ease-in-out;
-	margin: 0 5.6em;
+	margin: 0 6.05em;
 }
 
 .visitButton:hover {
@@ -315,6 +315,7 @@
 	width: 13em;
 	font-size: 0.2em;
 	margin-bottom: 3em;
+	margin-top: 2em;
 }
 
 #mfoButton:hover {
@@ -327,6 +328,7 @@
 
 #hallowButton {
 	width: 13em;
+	margin: 3em 5em 0 5.68em;
 }
 
 #hallowButton:hover {
@@ -341,7 +343,7 @@
 }
 
 #musiButton {
-	margin: 1em 6.1em;
+	margin: 2em 6.1em;
 	font-size: 0.37em;
 	width: 13em;
 }
