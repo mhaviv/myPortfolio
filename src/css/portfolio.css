@@ -105,7 +105,7 @@
 }
 
 #musiTextContainer {
-	width: 20em;
+	width: 25em;
 	margin: 0 2em 0 1em;
 }
 
@@ -225,7 +225,7 @@
 }
 
 #musi-liStyle {
-	padding: 1em 0.5em;
+	padding: 1em 2.5em;
 	width: 15em;
 	font-size: 0.47em;
 	margin: 0;
@@ -247,6 +247,8 @@
 
 .musiGroup {
 	width: 18em;
+	padding-left: 2.6em;
+
 }
 
 .marvelPic {
@@ -271,6 +273,12 @@
 	font-size: 1.05em;
 	padding: 0 5.7em;
 	padding-bottom: 1em;
+}
+
+.musiTech {
+		font-size: 1.3em;
+		padding: 0 5.7em;
+		padding-bottom: 1em;
 }
 
 .visitButton {
@@ -333,8 +341,8 @@
 }
 
 #musiButton {
-	margin: 1em 4em;
-	font-size: 0.36em;
+	margin: 1em 6.1em;
+	font-size: 0.37em;
 	width: 13em;
 }
 
@@ -347,7 +355,7 @@
 }
 
 #msStyle {
-	padding: 0 1.1em;
+	padding: 0 1.95em;
 }
 
 .linkHeadStyle2 {
@@ -377,6 +385,10 @@
 		width: 22em;
 	}
 
+	#musiTextContainer {
+		width: 22em;
+		margin: 0 2em 0 1em;
+	}
 
 	#tunesendSize {
 		font-size: 2.8em;
@@ -388,6 +400,10 @@
 
 	#hgStyle {
 		padding: 0 1.2em;
+	}
+
+	#msStyle {
+		padding: 0 1.45em;
 	}
 
 	.titleStyle {
@@ -409,6 +425,13 @@
 	#hallow-liStyle {
 		padding: 1em 1.2em;
 
+	}
+
+	#musi-liStyle {
+		padding: 1em 1.4em;
+		width: 15em;
+		font-size: 0.47em;
+		margin: 0;
 	}
 
 	.skillPics {
@@ -438,12 +461,18 @@
 	}
 
 	.musiGroup {
-		padding-left: 3.2em;
+		padding-left: 4.2em;
 	}
 
 	.tech {
-		font-size: 1em;
+		font-size: 1.1em;
 		/* padding-right: 0.5em; */
+	}
+
+	.musiTech {
+		font-size: 1.07em;
+		padding: 0 5.4em;
+		padding-bottom: 1em;
 	}
 
 	.marvelTech {
@@ -452,6 +481,7 @@
 	}
 
 	.hallowTech {
+		font-size: 0.9em;
 		padding: 0 4.7em;
 		padding-bottom: 1em;
 	}
@@ -466,6 +496,12 @@
 		font-size: 0.31em;
 	}
 
+	#musiButton {
+		margin: 1em 4.8em;
+		font-size: 0.37em;
+		width: 13em;
+	}
+
 }
 
 @media (min-width: 877px) and (max-width: 923px){
@@ -475,6 +511,11 @@
 
 	#hallowTextContainer {
 		margin-right: 1em;
+	}
+
+	#musiTextContainer {
+		width: 22em;
+		margin: 0 2em 0 1em;
 	}
 
 	#hallowSize {
@@ -504,6 +545,10 @@
 		padding: 0 1.03em;
 	}
 
+	#msStyle {
+		padding: 0 1.35em;
+	}
+
 	.titleStyle {
 		padding: 0 0 0 1.5em;
 	}
@@ -527,7 +572,7 @@
 
 	#musi-liStyle {
 		font-size: 0.4em;
-		padding: 1em 2.1em;
+		padding: 1em 2.9em;
 	}
 
 	.skillPics {
@@ -556,7 +601,7 @@
 	}
 
 	.musiGroup {
-		padding-left: 4.5em;
+		padding-left: 5.7em;
 	}
 
 	.marvelTech {
@@ -572,7 +617,7 @@
 
 	.musiTech {
 		font-size: 1em;
-		padding: 0 5.7em;
+		padding: 0 7em;
 		padding-bottom: 1em;
 	}
 
@@ -593,7 +638,7 @@
 
 	#musiButton {
 		font-size: 0.312em;
-		margin: 1em 5.6em;
+		margin: 1em 6.9em;
 	}
 
 }
