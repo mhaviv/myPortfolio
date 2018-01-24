@@ -14,6 +14,7 @@ class About extends Component {
 		return (
 			<div 
 				className="aboutContainer"
+				id="about"
 			>
 			<BrowserRouter>
 				<div

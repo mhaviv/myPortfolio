@@ -149,9 +149,7 @@ class Header extends Component {
 		return (
 			<div className="fix">
 				<BrowserRouter>
-					<nav
-						id="about"
-					>
+					<nav>
 						<ul
 							id="ulStyle"
 						>
