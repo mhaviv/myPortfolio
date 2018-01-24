@@ -8,7 +8,7 @@
 	src: url("./Fonts/bentonsansextracompblack/BentonSans ExtraComp Black.otf") format("opentype");
 }
 
-#myPortfolioContainer {
+.myPortfolioContainer {
 
 }
 
@@ -348,6 +348,11 @@
 
 #msStyle {
 	padding: 0 1.1em;
+}
+
+.linkHeadStyle2 {
+  text-decoration: none;
+  color: white;
 }
 
 @media (min-width: 923px) and (max-width: 1097px){

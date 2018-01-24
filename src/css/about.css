@@ -1,4 +1,4 @@
-#aboutContainer {
+.aboutContainer {
 	font-family: 'Roboto';
 	text-align: center;
 	color: #dddddd;
@@ -35,12 +35,12 @@
 	text-shadow: 1.5px 1.5px #000000;
 }
 
-#portStandOut {
+.portStandout {
 	border-bottom: 1.3px solid;
 	text-shadow: 2px 2px #000000;
 }
 
-#portStandOut:hover {
+.portStandout:hover {
 	color: #00adb5;
 }
 
@@ -53,140 +53,145 @@
 	padding-left: 0.3em;
 }
 
+.linkHeadStyle {
+  text-decoration: none;
+  color: #00adb5;
+}
+
 @media (max-width: 1280px) {
-	#aboutContainer {
+	.aboutContainer {
 		font-size: 2.9em;
 	}
 }
 
 @media (min-width: 1194px) and (max-width: 1280px){
-	#aboutContainer {
+	.aboutContainer {
 		font-size: 2.8em;
 	}
 }
 
 @media (min-width: 1153px) and (max-width: 1194px){
-	#aboutContainer {
+	.aboutContainer {
 		font-size: 2.7em;
 	}
 }
 
 @media (min-width: 1109px) and (max-width: 1153px){
-	#aboutContainer {
+	.aboutContainer {
 		font-size: 2.6em;
 	}
 }
 
 @media (min-width: 1064px) and (max-width: 1109px){
-	#aboutContainer {
+	.aboutContainer {
 		font-size: 2.5em;
 	}
 }
 
 @media (min-width: 1022px) and (max-width: 1064px){
-	#aboutContainer {
+	.aboutContainer {
 		font-size: 2.4em;
 	}
 }
 
 @media (min-width: 980px) and (max-width: 1022px){
-	#aboutContainer {
+	.aboutContainer {
 		font-size: 2.3em;
 	}
 }
 
 @media (min-width: 937px) and (max-width: 980px){
-	#aboutContainer {
+	.aboutContainer {
 		font-size: 2.2em;
 	}
 }
 
 @media (min-width: 895px) and (max-width: 937px){
-	#aboutContainer {
+	.aboutContainer {
 		font-size: 2.1em;
 	}
 }
 
 @media (min-width: 852px) and (max-width: 895px){
-	#aboutContainer {
+	.aboutContainer {
 		font-size: 2em;
 	}
 }
 
 @media (min-width: 811px) and (max-width: 852px){
-	#aboutContainer {
+	.aboutContainer {
 		font-size: 1.9em;
 	}
 }
 
 @media (min-width: 768px) and (max-width: 811px){
-	#aboutContainer {
+	.aboutContainer {
 		font-size: 1.8em;
 	}
 }
 
 @media (min-width: 725px) and (max-width: 768px){
-	#aboutContainer {
+	.aboutContainer {
 		font-size: 1.7em;
 	}
 }
 
 @media (min-width: 682px) and (max-width: 725px){
-	#aboutContainer {
+	.aboutContainer {
 		font-size: 1.6em;
 	}
 }
 
 @media (min-width: 638px) and (max-width: 682px){
-	#aboutContainer {
+	.aboutContainer {
 		font-size: 1.5em;
 	}
 }
 
 @media (min-width: 596px) and (max-width: 638px){
-	#aboutContainer {
+	.aboutContainer {
 		font-size: 1.4em;
 	}
 }
 
 @media (min-width: 555px) and (max-width: 596px){
-	#aboutContainer {
+	.aboutContainer {
 		font-size: 1.3em;
 	}
 }
 
 @media (min-width: 511px) and (max-width: 555px){
-	#aboutContainer {
+	.aboutContainer {
 		font-size: 1.2em;
 	}
 }
 
 @media (min-width: 471px) and (max-width: 511px){
-	#aboutContainer {
+	.aboutContainer {
 		font-size: 1.1em;
 	}
 }
 
 @media (min-width: 426px) and (max-width: 471px){
-	#aboutContainer {
+	.aboutContainer {
 		font-size: 1em;
 	}
 }
 
 @media (min-width: 386px) and (max-width: 426px){
-	#aboutContainer {
+	.aboutContainer {
 		font-size: 0.9em;
 	}
 }
 
 @media (min-width: 346px) and (max-width: 386px){
-	#aboutContainer {
+	.aboutContainer {
 		font-size: 0.8em;
 	}
 }
 
 @media (min-width: 0px) and (max-width: 346px){
-	#aboutContainer {
+	.aboutContainer {
 		font-size: 0.7em;
 	}
 }

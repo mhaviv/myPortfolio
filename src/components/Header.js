@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
 import "../css/header.css";
+import Skills from './Skills';
+import Portfolio from './Portfolio';
+import Contact from './Contact';
+import About from './About';
+import { BrowserRouter } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 class Header extends Component {
 
@@ -140,65 +147,91 @@ class Header extends Component {
     	}
 
 		return (
-			<nav>
-				<ul
-					id="ulStyle"
-				>
-					<div
-						className="MHHeadContainer"
+			<div className="fix">
+				<BrowserRouter>
+					<nav
+						id="about"
 					>
-						<div
-							className="logoContainer"
+						<ul
+							id="ulStyle"
 						>
-							<li
-								className="liStyle logo"
-							/>
-							<li
-								className={boxClass.join(' ')}
-								onMouseEnter={this.toggleOn.bind(this)}
-    							onMouseLeave={this.toggleOff.bind(this)}
-							/>
-						</div>
-						<div className="nameSoftContainer">
-							<li
-								className={nameSoftClass.join(' ')}
-								onMouseEnter={this.toggleOn.bind(this)}
-    							onMouseLeave={this.toggleOff.bind(this)}
-							/>
-						</div>
-					</div>
-					<div className="navItemsContainer">
-						<li
-							className={navAboutClass.join(' ')}
-							onMouseEnter={this.toggleNavAboutOn.bind(this)}
-    						onMouseLeave={this.toggleNavAboutOff.bind(this)}
-						>
-							About
-						</li>
-						<li
-							className={navSkillsClass.join(' ')}
-							onMouseEnter={this.toggleNavSkillsOn.bind(this)}
-    						onMouseLeave={this.toggleNavSkillsOff.bind(this)}
-						>
-							Skills
-						</li>
-						<li
-							className={navPortfolioClass.join(' ')}
-							onMouseEnter={this.toggleNavPortfolioOn.bind(this)}
-    						onMouseLeave={this.toggleNavPortfolioOff.bind(this)}
-						>
-							Portfolio
-						</li>
-						<li
-							className={navContactClass.join(' ')}
-							onMouseEnter={this.toggleNavContactOn.bind(this)}
-    						onMouseLeave={this.toggleNavContactOff.bind(this)}
-						>
-							Contact
-						</li>
-					</div>
-				</ul>
-			</nav>
+							<div
+								className="MHHeadContainer"
+							>
+								<div
+									className="logoContainer"
+								>
+									<li
+										className="liStyle logo"
+									/>
+									<li
+										className={boxClass.join(' ')}
+										onMouseEnter={this.toggleOn.bind(this)}
+		    							onMouseLeave={this.toggleOff.bind(this)}
+									/>
+								</div>
+								<div className="nameSoftContainer">
+									<li
+										className={nameSoftClass.join(' ')}
+										onMouseEnter={this.toggleOn.bind(this)}
+		    							onMouseLeave={this.toggleOff.bind(this)}
+									/>
+								</div>
+							</div>
+							<div className="navItemsContainer">
+								<li
+									className={navAboutClass.join(' ')}
+									onMouseEnter={this.toggleNavAboutOn.bind(this)}
+		    						onMouseLeave={this.toggleNavAboutOff.bind(this)}
+								>
+									<Link
+										to="/#about"
+										className="linkHeadStyle"
+									>
+										About
+									</Link>
+								</li>
+								<li
+									className={navSkillsClass.join(' ')}
+									onMouseEnter={this.toggleNavSkillsOn.bind(this)}
+		    						onMouseLeave={this.toggleNavSkillsOff.bind(this)}
+								>
+									<Link
+										to="/#skills"
+										className="linkHeadStyle"
+									>
+										Skills
+									</Link>
+								</li>
+								<li
+									className={navPortfolioClass.join(' ')}
+									onMouseEnter={this.toggleNavPortfolioOn.bind(this)}
+		    						onMouseLeave={this.toggleNavPortfolioOff.bind(this)}
+								>
+									<Link
+										to="/#portfolio"
+										className="linkHeadStyle"
+									>
+										Portfolio
+									</Link>
+								</li>
+								<li
+									className={navContactClass.join(' ')}
+									onMouseEnter={this.toggleNavContactOn.bind(this)}
+		    						onMouseLeave={this.toggleNavContactOff.bind(this)}
+								>
+									<Link
+										to="/#contact"
+										className="linkHeadStyle"
+									>
+										Contact
+									</Link>
+								</li>
+							</div>
+						</ul>
+					</nav>
+					</BrowserRouter>
+				</div>
 		)
 	}
 

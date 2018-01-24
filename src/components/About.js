@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import "../css/about.css";
+import { BrowserRouter } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 class About extends Component {
 	constructor() {
@@ -10,7 +12,10 @@ class About extends Component {
 
 	render() {
 		return (
-			<div id="aboutContainer">
+			<div 
+				className="aboutContainer"
+			>
+			<BrowserRouter>
 				<div
 					id="introContainer"
 				>
@@ -40,15 +45,21 @@ class About extends Component {
 							my
 						</span>
 						<span
-							id="portStandOut"
+							className="portStandOut"
 						>
-							Portfolio
+							<Link
+								to="/#portfolio"
+								className="linkHeadStyle"
+							>
+								Portfolio
+							</Link>
 						</span>
 						<span className="padPort2">
 							below
 						</span>
 					</div>
 				</div>
+			</BrowserRouter>
 			</div>
 		)
 	}

@@ -21,8 +21,11 @@ class Contact extends Component {
 
 	render() {
 		return(
+			<div
+				id="contact"
+			>
 			<form
-				id="contactForm "
+				id="contactForm"
 				className="animated bounceInLeft formContainerStyle"
 				onSubmit={this.grabForm.bind(this)}
 			>
@@ -109,6 +112,7 @@ class Contact extends Component {
 					Submit
 				</button>
 			</form>
+			</div>
 		)
 	}
 

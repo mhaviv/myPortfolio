@@ -11,7 +11,8 @@ class Portfolio extends Component {
 	render() {
 		return(
 			<div
-				id="myPortfolioContainer"
+				className="myPortfolioContainer"
+				id="portfolio"
 			>
 				<div
 					className="portfolioProjContainer"
@@ -110,7 +111,12 @@ class Portfolio extends Component {
 								className="visitButton"
 								id="mfoButton"
 							>
-								VISIT WEBSITE
+								<a
+									href="https://marvel-face-off2.herokuapp.com/"
+									className="linkHeadStyle2"
+								>
+										VISIT WEBSITE
+								</a>
 							</button>
 						</div>
 					</div>
@@ -177,7 +183,12 @@ class Portfolio extends Component {
 								className="visitButton"
 								id="hallowButton"
 							>
-								VISIT WEBSITE
+								<a
+									href="https://hallowgram.herokuapp.com/"
+									className="linkHeadStyle2"
+								>
+										VISIT WEBSITE
+								</a>
 							</button>
 						</div>
 					</div>
@@ -232,7 +243,12 @@ class Portfolio extends Component {
 								className="visitButton"
 								id="musiButton"
 							>
-								VISIT WEBSITE
+								<a
+									href="https://musistream.herokuapp.com/"
+									className="linkHeadStyle2"
+								>
+										VISIT WEBSITE
+								</a>
 							</button>
 						</div>
 					</div>

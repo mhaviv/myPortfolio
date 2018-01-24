@@ -8,13 +8,13 @@ import About from './components/About';
 class App extends Component {
   render() {
     return (
-		<div>
-	      <Header />
-	      <About />
-	      <Skills />
-	      <Portfolio />
-	      <Contact />
-		</div>
+    	<div>
+	    	<Header />
+	    	<About />
+	    	<Skills />
+	    	<Portfolio />
+	    	<Contact />
+    	</div>
     )
   }
 }

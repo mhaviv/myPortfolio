@@ -55,7 +55,8 @@ class Skills extends Component {
 
 		return(
 			<div
-				id="bigContainer"
+				className="bigContainer"
+				id="skills"
 			>
 				<div
 					id="expertiseContainer"
