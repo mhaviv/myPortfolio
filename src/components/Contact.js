@@ -4,10 +4,10 @@ import "../css/contact.css";
 class Contact extends Component {
 	constructor() {
 	  super();
-	
+
 	  this.state = {
 	  	form: {
-	  		name: this
+	  		name: "this"
 	  	}
 	  };
 	}
