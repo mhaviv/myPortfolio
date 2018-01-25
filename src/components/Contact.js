@@ -114,6 +114,7 @@ class Contact extends Component {
 				>
 					<form
 						method="POST"
+						action="send"
 						id="contactForm"
 						className="animated bounceInLeft formContainerStyle"
 						onSubmit={this.onSubmit}
