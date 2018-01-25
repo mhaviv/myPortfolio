@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import "../css/contact.css";
-// import axios from 'axios';
 import fire from '../firebase'
 // const nodemailer = require('nodemailer');
-
-
 
 
 class Contact extends Component {
@@ -46,6 +43,7 @@ class Contact extends Component {
 
 		this.formHider()
 		this.onFormSubmit()
+		// this.nodeMailer
 
 	}
 
@@ -60,6 +58,43 @@ class Contact extends Component {
 			formResponse: !currentState.formResponse
 		}), () => console.log(`Toggling visibility of Header!: ${this.state.formResponse}`))
 	}
+
+	// nodeMailer() {
+	// 	const { name, email, number, message } = this.state;
+	// 	const output = `
+	// 		<p>New Contact Request</p>
+	// 		<h3>Contact Details:</h3>
+	// 		<ul>
+	// 			<li>Name: ${name}<li>
+	// 			<li>Email: ${email}<li>
+	// 			<li>Phone: ${number}<li>
+	// 		</ul>
+	// 		<h3>Message</h3>
+	// 		<p>${message}</p>
+	// 		`;
+
+	// 	let transporter = nodemailer.createTransport({
+	// 	 service: 'gmail',
+	// 	 auth: {
+	// 	        user: 'mhaviv18@gmail.com',
+	// 	        pass: 'mikey1800'
+	// 	    }
+	// 	});
+
+	// 	const mailOptions = {
+	// 	    from: '"Nodemailer Contact" <mhaviv18@gmail.com>', // sender address
+	// 	    to: 'mhaviv18@gmail.com', // list of receivers
+	// 	    subject: 'Node Contact Request', // Subject line
+	// 	    html: output // html body
+	// 	};
+
+	// 	transporter.sendMail(mailOptions, function (err, info) {
+	// 	   if(err)
+	// 	     console.log(err)
+	// 	   else
+	// 	     console.log(info);
+	// 	});
+	// }
 
 	render() {
 
@@ -78,6 +113,7 @@ class Contact extends Component {
 					className={this.state.formHidden ? "formHide" : "formShow"}
 				>
 					<form
+						method="POST"
 						id="contactForm"
 						className="animated bounceInLeft formContainerStyle"
 						onSubmit={this.onSubmit}

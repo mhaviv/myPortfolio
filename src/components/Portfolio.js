@@ -114,6 +114,7 @@ class Portfolio extends Component {
 								<a
 									href="https://marvel-face-off2.herokuapp.com/"
 									className="linkHeadStyle2"
+									target="_blank"
 								>
 										VISIT WEBSITE
 								</a>
@@ -186,6 +187,7 @@ class Portfolio extends Component {
 								<a
 									href="https://hallowgram.herokuapp.com/"
 									className="linkHeadStyle2"
+									target="_blank"
 								>
 										VISIT WEBSITE
 								</a>
@@ -246,6 +248,7 @@ class Portfolio extends Component {
 								<a
 									href="https://musistream.herokuapp.com/"
 									className="linkHeadStyle2"
+									target="_blank"
 								>
 										VISIT WEBSITE
 								</a>
