@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import "../css/contact.css";
 import fire from '../firebase'
-// const nodemailer = require('nodemailer');
+import axios from 'axios';
+
 
 
 class Contact extends Component {
@@ -13,6 +14,7 @@ class Contact extends Component {
           	email: '',
           	number: '',
           	message: '',
+          	timestamp: Date.now(),
           	formHidden: false,
           	formResponse: false
 	  }
@@ -26,14 +28,22 @@ class Contact extends Component {
 
     onSubmit = (event) => {
         event.preventDefault();
+
+
         // get our form data out of state
-        const { name, email, number, message } = this.state;
+        const { name, email, number, message, timestamp } = this.state;
+
+        let myDate = new Date(timestamp);
+		let formatedTime = myDate.toJSON();
+
+        const formData = {name, email, number, message, timestamp };
 
  		fire.database().ref().push({
  			name: name,
  			email: email,
  			number: number,
  			message: message,
+ 			timestamp: formatedTime
  		}).then((response) => {
  			console.log(response)
  		})
@@ -41,9 +51,10 @@ class Contact extends Component {
 			console.log(error)
 		});
 
+  		this.nodeMailer(formData)
 		this.formHider()
 		this.onFormSubmit()
-		// this.nodeMailer
+
 
 	}
 
@@ -59,42 +70,12 @@ class Contact extends Component {
 		}), () => console.log(`Toggling visibility of Header!: ${this.state.formResponse}`))
 	}
 
-	// nodeMailer() {
-	// 	const { name, email, number, message } = this.state;
-	// 	const output = `
-	// 		<p>New Contact Request</p>
-	// 		<h3>Contact Details:</h3>
-	// 		<ul>
-	// 			<li>Name: ${name}<li>
-	// 			<li>Email: ${email}<li>
-	// 			<li>Phone: ${number}<li>
-	// 		</ul>
-	// 		<h3>Message</h3>
-	// 		<p>${message}</p>
-	// 		`;
-
-	// 	let transporter = nodemailer.createTransport({
-	// 	 service: 'gmail',
-	// 	 auth: {
-	// 	        user: 'mhaviv18@gmail.com',
-	// 	        pass: 'mikey1800'
-	// 	    }
-	// 	});
-
-	// 	const mailOptions = {
-	// 	    from: '"Nodemailer Contact" <mhaviv18@gmail.com>', // sender address
-	// 	    to: 'mhaviv18@gmail.com', // list of receivers
-	// 	    subject: 'Node Contact Request', // Subject line
-	// 	    html: output // html body
-	// 	};
-
-	// 	transporter.sendMail(mailOptions, function (err, info) {
-	// 	   if(err)
-	// 	     console.log(err)
-	// 	   else
-	// 	     console.log(info);
-	// 	});
-	// }
+	nodeMailer(data) {
+		axios.
+			post('/send', data)
+			.then((response) => console.log(response))
+			.catch((error) => console.log(error))
+	}
 
 	render() {
 
@@ -116,7 +97,7 @@ class Contact extends Component {
 						method="POST"
 						action="send"
 						id="contactForm"
-						className="animated bounceInLeft formContainerStyle"
+						className="wow bounceInLeft formContainerStyle"
 						onSubmit={this.onSubmit}
 					>
 						<div

@@ -1,5 +1,5 @@
-import * as firebase from 'firebase';
-// import * as ContactForm from './models/contactForm'
+// import * as firebase from 'firebase';
+const firebase = require('firebase');
 
 // Initialize Firebase
 var config = {
@@ -12,7 +12,8 @@ var config = {
 };
 let fire = firebase.initializeApp(config);
 
-export default fire;
+// export default fire;
+module.exports = fire;
 
 
 

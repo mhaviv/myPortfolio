@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import "../css/about.css";
 import { BrowserRouter } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
-class About extends Component {
+
+class Home extends Component {
 	constructor() {
 	  super();
 	
@@ -11,11 +13,13 @@ class About extends Component {
 	}
 
 	render() {
+		
 		return (
-			<div 
+			<div
 				className="aboutContainer"
 				id="about"
 			>
+			<ScrollableAnchor id={'about'}>
 			<BrowserRouter>
 				<div
 					id="introContainer"
@@ -61,9 +65,10 @@ class About extends Component {
 					</div>
 				</div>
 			</BrowserRouter>
+			</ScrollableAnchor>
 			</div>
 		)
 	}
 }
 
-export default About;
+export default Home;

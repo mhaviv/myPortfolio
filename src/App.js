@@ -3,14 +3,14 @@ import Header from './components/Header';
 import Skills from './components/Skills';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
-import About from './components/About';
+import Home from './components/Home';
 
 class App extends Component {
   render() {
     return (
     	<div>
 	    	<Header />
-	    	<About />
+	    	<Home />
 	    	<Skills />
 	    	<Portfolio />
 	    	<Contact />
