@@ -33,6 +33,10 @@
 	margin: 2em 4em;
 }
 
+.formErrorStyle {
+	color: red;
+}
+
 .labelContainer {
 	width: 26em;
 	align-items: flex-start;

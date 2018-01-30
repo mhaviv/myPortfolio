@@ -147,19 +147,19 @@ class Header extends Component {
 						<nav>
 							<ul id="ulStyle">
 								<div className="MHHeadContainer">
-									<div className="logoContainer">
+									<div
+										className="logoContainer"
+										onMouseEnter={this.toggleOn.bind(this)}
+										onMouseLeave={this.toggleOff.bind(this)}
+									>
 										<li className="liStyle logo" />
 										<li
 											className={boxClass.join(' ')}
-											onMouseEnter={this.toggleOn.bind(this)}
-											onMouseLeave={this.toggleOff.bind(this)}
 										/>
 									</div>
 									<div className="nameSoftContainer">
 										<li
 											className={nameSoftClass.join(' ')}
-											onMouseEnter={this.toggleOn.bind(this)}
-											onMouseLeave={this.toggleOff.bind(this)}
 										/>
 									</div>
 								</div>
