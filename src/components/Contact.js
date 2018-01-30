@@ -136,8 +136,8 @@ class Contact extends Component {
 	}
 
 	nodeMailer(data) {
-		axios.
-			post('/send', data)
+		axios
+			.post('/send', data)
 			.then((response) => console.log(response))
 			.catch((error) => console.log(error))
 	}

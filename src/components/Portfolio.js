@@ -21,6 +21,7 @@ class Portfolio extends Component {
 					<img
 						src={require("../images/TuneSendMockIphone.png")}
 						className="iphoneSize"
+						alt="TuneSend IOS keyboard"
 					/>
 					<div className="portTextContainer">
 						<div
@@ -47,14 +48,17 @@ class Portfolio extends Component {
 								<img
 									src={require("../images/swift.png")}
 									className="skillPics"
+									alt="Swift box"
 								/>
 								<img
 									src={require("../images/react-native.png")}
 									className="skillPics"
+									alt="React Native box"
 								/>
 								<img
 									src={require("../images/javascript.png")}
 									className="skillPics"
+									alt="Javascript box"
 								/>
 							</li>
 							<button
@@ -96,14 +100,17 @@ class Portfolio extends Component {
 									<img
 										src={require("../images/react.png")}
 										className="skillPics marvelPic"
+										alt="React box"
 									/>
 									<img
 										src={require("../images/javascript.png")}
 										className="skillPics marvelPic"
+										alt="Javascript box"
 									/>
 									<img
 										src={require("../images/css.png")}
 										className="skillPics marvelPic"
+										alt="CSS box"
 									/>
 								</div>
 							</li>
@@ -115,6 +122,7 @@ class Portfolio extends Component {
 									href="https://marvel-face-off2.herokuapp.com/"
 									className="linkHeadStyle2"
 									target="_blank"
+									rel="noopener noreferrer"
 								>
 										VISIT WEBSITE
 								</a>
@@ -124,6 +132,7 @@ class Portfolio extends Component {
 					<img
 						src={require("../images/MFOSite.png")}
 						className="computerSize"
+						alt="Marvel Faceoff app"
 					/>
 				</div>
 				<div
@@ -133,6 +142,7 @@ class Portfolio extends Component {
 					<img
 						src={require("../images/HallowgramSite.png")}
 						className="computerSize2"
+						alt="Hallowgram app"
 					/>
 					<div
 						className="portTextContainer"
@@ -161,22 +171,27 @@ class Portfolio extends Component {
 									<img
 										src={require("../images/javascript.png")}
 										className="skillPics hallowPic"
+										alt="Javascript box"
 									/>
 									<img
 										src={require("../images/nodejs.png")}
 										className="skillPics hallowPic"
+										alt="Node.js box"
 									/>
 									<img
 										src={require("../images/aws.png")}
 										className="skillPics hallowPic"
+										alt="AWS box"
 									/>
 									<img
 										src={require("../images/postgreSQL.png")}
 										className="skillPics hallowPic"
+										alt="PostgreSQL box"
 									/>
 									<img
 										src={require("../images/css.png")}
 										className="skillPics hallowPic"
+										alt="CSS box"
 									/>
 								</div>
 							</li>
@@ -188,6 +203,7 @@ class Portfolio extends Component {
 									href="https://hallowgram.herokuapp.com/"
 									className="linkHeadStyle2"
 									target="_blank"
+									rel="noopener noreferrer"
 								>
 										VISIT WEBSITE
 								</a>
@@ -226,18 +242,22 @@ class Portfolio extends Component {
 									<img
 										src={require("../images/javascript.png")}
 										className="skillPics musiPic"
+										alt="Javascript box"
 									/>
 									<img
 										src={require("../images/Bootstrap.png")}
 										className="skillPics musiPic"
+										alt="Bootstrap box"
 									/>
 									<img
 										src={require("../images/css.png")}
 										className="skillPics musiPic"
+										alt="CSS box"
 									/>
 									<img
 										src={require("../images/html.png")}
 										className="skillPics musiPic"
+										alt="HTML box"
 									/>
 								</div>
 							</li>
@@ -249,6 +269,7 @@ class Portfolio extends Component {
 									href="https://musistream.herokuapp.com/"
 									className="linkHeadStyle2"
 									target="_blank"
+									rel="noopener noreferrer"
 								>
 										VISIT WEBSITE
 								</a>
@@ -258,6 +279,7 @@ class Portfolio extends Component {
 					<img
 						src={require("../images/musiStreamSite.png")}
 						className="computerSize"
+						alt="MusiStream app"
 					/>
 				</div>
 			</div>
