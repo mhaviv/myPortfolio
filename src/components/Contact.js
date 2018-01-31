@@ -41,30 +41,30 @@ class Contact extends Component {
 		let phoneNumberValid = this.state.phoneNumberValid;
 		let messageValid = this.state.messageValid;
 
-		switch(fieldName) {
+	switch(fieldName) {
 		case 'name':
 		    nameValid = value.match(/^[a-z ,.'-]+$/i) && value.length >= 2;
 		    fieldValidationErrors.name = nameValid ? '': ' is invalid';
-		    console.log(fieldValidationErrors.name)
 		    break;
 		case 'email':
 		    emailValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
 		    fieldValidationErrors.email = emailValid ? '' : ' is invalid';
-		    console.log(fieldValidationErrors.email)
 		    break;
 		case 'number':
 		    phoneNumberValid = value.length >= 10;
 		    fieldValidationErrors.number = phoneNumberValid ? '': ' is too short';
-		    console.log(fieldValidationErrors.number)
 		    break;
 		case 'message':
 		    messageValid = value.match(/^[a-z ,.'-]+$/i) && value.length >= 2;
 		    fieldValidationErrors.message = messageValid ? '': ' is invalid';
-		    console.log(fieldValidationErrors.message)
 		    break;
 		  default:
 		    break;
+
 	}
+
+	// console.log("errors", fieldValidationErrors)
+
 	this.setState({formErrors: fieldValidationErrors,
 	                nameValid: nameValid,
 	                emailValid: emailValid,
@@ -155,7 +155,10 @@ class Contact extends Component {
 			formValid
 		} = this.state;
 
-		console.log()
+
+		if(formErrors.name.toString() === "name"){
+			console.log('helloooooo')
+		}
 
 		return(
 			<div
@@ -193,7 +196,7 @@ class Contact extends Component {
 						</div>
 						<FormErrors
 							formErrors={formErrors}
-							className="formErrorStyle"
+							className="formErrorContainer"
 						/>
 						<div className=
 							{`
@@ -220,6 +223,10 @@ class Contact extends Component {
 								onChange={this.onChange}
 							/>
 						</div>
+						{/*<FormErrors
+							formErrors={formErrors}
+							id="nameError"
+						/>*/}
 						<div className=
 							{`
 								form-group ${this.errorClass(formErrors.email)}
@@ -245,6 +252,10 @@ class Contact extends Component {
 								onChange={this.onChange}
 							/>
 						</div>
+						{/*<FormErrors
+							formErrors={formErrors}
+							id="emailError"
+						/>*/}
 						<div className=
 							{`
 								form-group ${this.errorClass(formErrors.number)}
@@ -270,6 +281,10 @@ class Contact extends Component {
 								onChange={this.onChange}
 							/>
 						</div>
+						{/*<FormErrors
+							formErrors={formErrors}
+							id="numberError"
+						/>*/}
 						<div className=
 							{`
 								form-group ${this.errorClass(formErrors.message)}
@@ -295,6 +310,10 @@ class Contact extends Component {
 								onChange={this.onChange}
 							/>
 						</div>
+						{/*<FormErrors
+							formErrors={formErrors}
+							id="messageError"
+						/>*/}
 						<button
 							className="buttonStyle"
 							type="submit"
