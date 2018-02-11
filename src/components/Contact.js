@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "../css/contact.css";
-import fire from '../config/dev'
+import fire from '../config/keys'
 import { FormErrors } from './FormErrors';
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor'
 
