@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "../css/skills.css";
 import SkillsChild from './SkillsChild'
-
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor'
 
 class Skills extends Component {
 	constructor() {
@@ -27,6 +27,10 @@ class Skills extends Component {
 	  this.renderSkillsChildren = this.renderSkillsChildren.bind(this)
 	}
 
+	componentWillMount() {
+		configureAnchors({offset: -60, scrollDuration: 1200})
+	}
+
 	overlayHide(){
 		this.setState(currentState => ({
 			overlayOn: false
@@ -47,21 +51,22 @@ class Skills extends Component {
 		})
 	}
 
-	// nameAppend() {
-	// 	if this.state.Skills()
-	// }
-
 	render() {
 
 		return(
 			<div
 				className="bigContainer"
-				id="skills"
 			>
 				<div
 					id="expertiseContainer"
 				>
+				<ScrollableAnchor
+	            	id="skills"
+	         	>
+	         	<div id="expertiseMargin">
 					My Expertise
+	         	</div>
+				</ScrollableAnchor>
 				</div>
 				<div
 					id="skillsContainer"

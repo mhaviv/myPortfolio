@@ -4,8 +4,6 @@ import '../css/header.css';
 // import Portfolio from './Portfolio';
 // import Contact from './Contact';
 // import About from './About';
-import { BrowserRouter } from 'react-router-dom';
-import { HashLink as Link } from 'react-router-hash-link';
 
 class Header extends Component {
 	constructor() {
@@ -122,89 +120,87 @@ class Header extends Component {
 
 		let navAboutClass = ['liStyle'];
 		if (this.state.navItemsOn.about) {
-			navAboutClass.push('animated shake');
+			navAboutClass.push('animated jello');
 		}
 
 		let navSkillsClass = ['liStyle'];
 		if (this.state.navItemsOn.skills) {
-			navSkillsClass.push('animated shake');
+			navSkillsClass.push('animated jello');
 		}
 
 		let navPortfolioClass = ['liStyle'];
 		if (this.state.navItemsOn.portfolio) {
-			navPortfolioClass.push('animated shake');
+			navPortfolioClass.push('animated jello');
 		}
 
 		let navContactClass = ['liStyle'];
 		if (this.state.navItemsOn.contact) {
-			navContactClass.push('animated shake');
+			navContactClass.push('animated jello');
 		}
 
 		return (
 			<div className="fix">
-				<BrowserRouter>
-					<div>
-						<nav>
-							<ul id="ulStyle">
-								<div className="MHHeadContainer">
-									<div
-										className="logoContainer"
-										onMouseEnter={this.toggleOn.bind(this)}
-										onMouseLeave={this.toggleOff.bind(this)}
-									>
-										<li className="liStyle logo" />
-										<li
-											className={boxClass.join(' ')}
-										/>
-									</div>
-									<div className="nameSoftContainer">
-										<li
-											className={nameSoftClass.join(' ')}
-										/>
-									</div>
+				<div>
+					<nav>
+						<ul id="ulStyle">
+							<div className="MHHeadContainer">
+								<div
+									className="logoContainer"
+									onMouseEnter={this.toggleOn.bind(this)}
+									onMouseLeave={this.toggleOff.bind(this)}
+								>
+									<li className="liStyle logo" />
+									<li
+										className={boxClass.join(' ')}
+									/>
 								</div>
-								<div className="navItemsContainer" id="aboutContainer">
+								<div className="nameSoftContainer">
 									<li
-										className={navAboutClass.join(' ')}
-										onMouseEnter={this.toggleNavAboutOn.bind(this)}
-										onMouseLeave={this.toggleNavAboutOff.bind(this)}
-									>
-										<Link to="/#about" className="linkHeadStyle">
-											About
-										</Link>
-									</li>
-									<li
-										className={navSkillsClass.join(' ')}
-										onMouseEnter={this.toggleNavSkillsOn.bind(this)}
-										onMouseLeave={this.toggleNavSkillsOff.bind(this)}
-									>
-										<Link to="/#skills" className="linkHeadStyle">
-											Skills
-										</Link>
-									</li>
-									<li
-										className={navPortfolioClass.join(' ')}
-										onMouseEnter={this.toggleNavPortfolioOn.bind(this)}
-										onMouseLeave={this.toggleNavPortfolioOff.bind(this)}
-									>
-										<Link to="/#portfolio" className="linkHeadStyle">
-											Portfolio
-										</Link>
-									</li>
-									<li
-										className={navContactClass.join(' ')}
-										onMouseEnter={this.toggleNavContactOn.bind(this)}
-										onMouseLeave={this.toggleNavContactOff.bind(this)}
-									>
-										<Link to="/#contact" className="linkHeadStyle">
-											Contact
-										</Link>
-									</li>
+										className={nameSoftClass.join(' ')}
+									/>
 								</div>
-							</ul>
-						</nav>
-					</div>
-				</BrowserRouter>
+							</div>
+							<div className="navItemsContainer" id="aboutContainer">
+								<li
+									className={navAboutClass.join(' ')}
+									onMouseEnter={this.toggleNavAboutOn.bind(this)}
+									onMouseLeave={this.toggleNavAboutOff.bind(this)}
+								>
+									<a href="#home" className="linkHeadStyle">
+										Home
+									</a>
+								</li>
+								<li
+									className={navSkillsClass.join(' ')}
+									onMouseEnter={this.toggleNavSkillsOn.bind(this)}
+									onMouseLeave={this.toggleNavSkillsOff.bind(this)}
+								>
+									<a href="#skills" className="linkHeadStyle">
+										Skills
+									</a>
+								</li>
+								<li
+									className={navPortfolioClass.join(' ')}
+									onMouseEnter={this.toggleNavPortfolioOn.bind(this)}
+									onMouseLeave={this.toggleNavPortfolioOff.bind(this)}
+								>
+									<a href="#portfolio" className="linkHeadStyle">
+										Portfolio
+									</a>
+								</li>
+								<li
+									className={navContactClass.join(' ')}
+									onMouseEnter={this.toggleNavContactOn.bind(this)}
+									onMouseLeave={this.toggleNavContactOff.bind(this)}
+								>
+									<a href="#contact" className="linkHeadStyle">
+										Contact
+									</a>
+								</li>
+							</div>
+						</ul>
+					</nav>
+				</div>
 			</div>
 		);
 	}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "../css/portfolio.css";
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor'
 
 class Portfolio extends Component {
 	constructor(props) {
@@ -8,12 +9,18 @@ class Portfolio extends Component {
 	  this.state = {};
 	}
 
+	componentWIllMount() {
+		configureAnchors({ offset: -60, scrollDuration: 1200 })
+	}
+
 	render() {
 		return(
-			<div
+         	<div
 				className="myPortfolioContainer"
-				id="portfolio"
-			>
+         	>
+			<ScrollableAnchor
+            	id="portfolio"
+         	>
 				<div
 					className="portfolioProjContainer"
 					id="tunesendContainer"
@@ -69,6 +76,7 @@ class Portfolio extends Component {
 						</div>
 					</div>
 				</div>
+				</ScrollableAnchor>
 				<div
 					className="portfolioProjContainer"
 					id="mfoContainer"

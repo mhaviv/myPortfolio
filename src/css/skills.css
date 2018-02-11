@@ -4,6 +4,7 @@
 }
 
 #expertiseContainer {
+	background-color: #393e46;
 	text-align: center;
 	padding-top: 2em;
 	font-size: 3em;
@@ -12,11 +13,16 @@
 }
 
 #skillsContainer {
+	background-color: #393e46;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
 	padding: 0 0 2em 0;
 	text-align: center;
+}
+
+#expertiseMargin {
+	padding-top: 1em;
 }
 
 .mySkill {

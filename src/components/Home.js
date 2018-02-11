@@ -1,72 +1,73 @@
 import React, { Component } from 'react';
-import "../css/about.css";
-import { BrowserRouter } from 'react-router-dom';
-import { HashLink as Link } from 'react-router-hash-link';
-import ScrollableAnchor from 'react-scrollable-anchor';
+import "../css/home.css";
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
+
 
 
 class Home extends Component {
 	constructor() {
 	  super();
-	
+
 	  this.state = {};
 	}
 
+	componentWillMount() {
+		configureAnchors({offset: -60, scrollDuration: 1200})
+	}
+	
 	render() {
-		
 		return (
-			<div
-				className="aboutContainer"
-				id="about"
-			>
-			<ScrollableAnchor id={'about'}>
-			<BrowserRouter>
+			<ScrollableAnchor
+          		id="home"
+         	>
 				<div
-					id="introContainer"
+					className="homeContainer"
 				>
 					<div
-						className="introDivs"
+						id="introContainer"
 					>
-						Hi My Name is
-						<span
-							className="standOut"
+						<div
+							className="introDivs"
 						>
-							Michael Haviv
-						</span>
-					</div>
-					<div
-						className="introDivs"
-					>
-						I am a
-						<span className="standOut">
-							Full Stack Software Developer
-						</span>
-					</div>
-					<div
-						className="introDivs"
-					>
-						Check out
-						<span className="padPort">
-							my
-						</span>
-						<span
-							className="portStandOut"
-						>
-							<Link
-								to="/#portfolio"
-								className="linkHeadStyle"
+							Hi My Name is
+							<span
+								className="standOut"
 							>
-								Portfolio
-							</Link>
-						</span>
-						<span className="padPort2">
-							below
-						</span>
+								Michael Haviv
+							</span>
+						</div>
+						<div
+							className="introDivs"
+						>
+							I am a
+							<span className="standOut">
+								Full Stack Software Developer
+							</span>
+						</div>
+						<div
+							className="introDivs"
+						>
+							Check out
+							<span className="padPort">
+								my
+							</span>
+							<span
+								className="portStandOut"
+							>
+								<a
+									to="/#portfolio"
+									className="linkHeadStyle"
+								>
+									Portfolio
+								</a>
+							</span>
+							<span className="padPort2">
+								below
+							</span>
+						</div>
 					</div>
 				</div>
-			</BrowserRouter>
 			</ScrollableAnchor>
-			</div>
 		)
 	}
 }

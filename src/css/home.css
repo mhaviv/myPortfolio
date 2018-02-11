@@ -1,4 +1,4 @@
-.aboutContainer {
+.homeContainer {
 	font-family: 'Roboto';
 	text-align: center;
 	color: #dddddd;
@@ -13,7 +13,7 @@
    	background-size: cover;
    	background-position: center center;
 	font-size: 3em;
-	padding: 3.5em 3em;
+	padding: 4em 3em;
 	line-height: 1.5;
 }
 
@@ -59,139 +59,139 @@
 }
 
 @media (max-width: 1280px) {
-	.aboutContainer {
+	.homeContainer {
 		font-size: 2.9em;
 	}
 }
 
 @media (min-width: 1194px) and (max-width: 1280px){
-	.aboutContainer {
+	.homeContainer {
 		font-size: 2.8em;
 	}
 }
 
 @media (min-width: 1153px) and (max-width: 1194px){
-	.aboutContainer {
+	.homeContainer {
 		font-size: 2.7em;
 	}
 }
 
 @media (min-width: 1109px) and (max-width: 1153px){
-	.aboutContainer {
+	.homeContainer {
 		font-size: 2.6em;
 	}
 }
 
 @media (min-width: 1064px) and (max-width: 1109px){
-	.aboutContainer {
+	.homeContainer {
 		font-size: 2.5em;
 	}
 }
 
 @media (min-width: 1022px) and (max-width: 1064px){
-	.aboutContainer {
+	.homeContainer {
 		font-size: 2.4em;
 	}
 }
 
 @media (min-width: 980px) and (max-width: 1022px){
-	.aboutContainer {
+	.homeContainer {
 		font-size: 2.3em;
 	}
 }
 
 @media (min-width: 937px) and (max-width: 980px){
-	.aboutContainer {
+	.homeContainer {
 		font-size: 2.2em;
 	}
 }
 
 @media (min-width: 895px) and (max-width: 937px){
-	.aboutContainer {
+	.homeContainer {
 		font-size: 2.1em;
 	}
 }
 
 @media (min-width: 852px) and (max-width: 895px){
-	.aboutContainer {
+	.homeContainer {
 		font-size: 2em;
 	}
 }
 
 @media (min-width: 811px) and (max-width: 852px){
-	.aboutContainer {
+	.homeContainer {
 		font-size: 1.9em;
 	}
 }
 
 @media (min-width: 768px) and (max-width: 811px){
-	.aboutContainer {
+	.homeContainer {
 		font-size: 1.8em;
 	}
 }
 
 @media (min-width: 725px) and (max-width: 768px){
-	.aboutContainer {
+	.homeContainer {
 		font-size: 1.7em;
 	}
 }
 
 @media (min-width: 682px) and (max-width: 725px){
-	.aboutContainer {
+	.homeContainer {
 		font-size: 1.6em;
 	}
 }
 
 @media (min-width: 638px) and (max-width: 682px){
-	.aboutContainer {
+	.homeContainer {
 		font-size: 1.5em;
 	}
 }
 
 @media (min-width: 596px) and (max-width: 638px){
-	.aboutContainer {
+	.homeContainer {
 		font-size: 1.4em;
 	}
 }
 
 @media (min-width: 555px) and (max-width: 596px){
-	.aboutContainer {
+	.homeContainer {
 		font-size: 1.3em;
 	}
 }
 
 @media (min-width: 511px) and (max-width: 555px){
-	.aboutContainer {
+	.homeContainer {
 		font-size: 1.2em;
 	}
 }
 
 @media (min-width: 471px) and (max-width: 511px){
-	.aboutContainer {
+	.homeContainer {
 		font-size: 1.1em;
 	}
 }
 
 @media (min-width: 426px) and (max-width: 471px){
-	.aboutContainer {
+	.homeContainer {
 		font-size: 1em;
 	}
 }
 
 @media (min-width: 386px) and (max-width: 426px){
-	.aboutContainer {
+	.homeContainer {
 		font-size: 0.9em;
 	}
 }
 
 @media (min-width: 346px) and (max-width: 386px){
-	.aboutContainer {
+	.homeContainer {
 		font-size: 0.8em;
 	}
 }
 
 @media (min-width: 0px) and (max-width: 346px){
-	.aboutContainer {
+	.homeContainer {
 		font-size: 0.7em;
 	}
 }

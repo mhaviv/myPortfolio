@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import "../css/contact.css";
-import fire from '../firebase'
-import axios from 'axios';
+import fire from '../config/dev'
 import { FormErrors } from './FormErrors';
-
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor'
 
 
 class Contact extends Component {
@@ -25,6 +24,10 @@ class Contact extends Component {
     		messageValid: false,
     		formValid: false
 	  }
+	}
+
+	componentWillMount() {
+		configureAnchors({offset: -60, scrollDuration: 1200})
 	}
 
 	onChange = (event) => {
@@ -55,7 +58,7 @@ class Contact extends Component {
 		    fieldValidationErrors.number = phoneNumberValid ? '': ' is too short';
 		    break;
 		case 'message':
-		    messageValid = value.match(/^[a-z ,.'-]+$/i) && value.length >= 2;
+		    messageValid = value.match(/^[a-zA-Z0-9 ,.!'-]+$/i) && value.length >= 2;
 		    fieldValidationErrors.message = messageValid ? '': ' is invalid';
 		    break;
 		  default:
@@ -101,8 +104,6 @@ class Contact extends Component {
         let myDate = new Date(timestamp);
 		let formatedTime = myDate.toJSON();
 
-        const formData = {name, email, number, message, timestamp };
-
  		fire.database().ref().push({
  			name: name,
  			email: email,
@@ -110,13 +111,12 @@ class Contact extends Component {
  			message: message,
  			timestamp: formatedTime
  		}).then((response) => {
- 			console.log(response)
+ 			// console.log(response)
  		})
   		.catch(function (error) {
 			console.log(error)
 		});
 
-  		this.nodeMailer(formData)
 		this.formHider()
 		this.onFormSubmit()
 
@@ -135,12 +135,6 @@ class Contact extends Component {
 		}), () => console.log(`Toggling visibility of Header!: ${this.state.formResponse}`))
 	}
 
-	nodeMailer(data) {
-		axios
-			.post('/send', data)
-			.then((response) => console.log(response))
-			.catch((error) => console.log(error))
-	}
 
 	render() {
 
@@ -162,172 +156,177 @@ class Contact extends Component {
 
 		return(
 			<div
-				id="contact"
 			>
-				<div
-					className={formResponse ? "thankYouOn animated bounceInDown" : "thankYouOff"}
-				>
-					Thank You!
-				</div>
-				<div
-					className={formHidden ? "formHide" : "formShow"}
-				>
-					<form
-						method="POST"
-						action="send"
-						id="contactForm"
-						className="wow bounceInLeft formContainerStyle"
-						onSubmit={this.onSubmit}
-					>
+				<ScrollableAnchor
+	        		id="contact"
+	     		>
+					<div>
 						<div
-							id="quesWorkTog"
+							className={formResponse ? "thankYouOn animated bounceInDown" : "thankYouOff"}
 						>
-							Have any questions?
-							<div
-								className="workStyle"
-							>
-								Fill out the form below and
-							</div>
-							<div
-								className="workStyle"
-							>
-								lets work together!
-							</div>
+							Thank You!
 						</div>
-						<FormErrors
-							formErrors={formErrors}
-							className="formErrorContainer"
-						/>
-						<div className=
-							{`
-								form-group ${this.errorClass(formErrors.name)}
-							`}
+						<div
+							className={formHidden ? "formHide" : "formShow"}
 						>
-							<div
-								className="labelContainer"
+							<form
+								method="POST"
+								action="send"
+								id="contactForm"
+								className="wow bounceInLeft formContainerStyle"
+								onSubmit={this.onSubmit}
 							>
-								<label
-									className="labelStyle"
-									htmlFor="name"
+								<div
+									id="quesWorkTog"
 								>
-									Name
-								</label>
-							</div>
-							<input
-								className="inputStyle"
-								type="text"
-								placeholder="John Appleseed"
-								id="name"
-								name="name"
-								value={name}
-								onChange={this.onChange}
-							/>
-						</div>
-						{/*<FormErrors
-							formErrors={formErrors}
-							id="nameError"
-						/>*/}
-						<div className=
-							{`
-								form-group ${this.errorClass(formErrors.email)}
-							`}
-						>
-							<div
-								className="labelContainer"
-							>
-								<label
-									className="labelStyle"
-									htmlFor="email"
+									Have any questions?
+									<div
+										className="workStyle"
+									>
+										Fill out the form below and
+									</div>
+									<div
+										className="workStyle"
+									>
+										lets work together!
+									</div>
+								</div>
+								<FormErrors
+									formErrors={formErrors}
+									className="formErrorContainer"
+								/>
+								<div className=
+									{`
+										form-group ${this.errorClass(formErrors.name)}
+									`}
 								>
-									Email
-								</label>
-							</div>
-							<input
-								className="inputStyle"
-								type="email"
-								placeholder="john123@john.com"
-								id="email"
-								name="email"
-								value={email}
-								onChange={this.onChange}
-							/>
-						</div>
-						{/*<FormErrors
-							formErrors={formErrors}
-							id="emailError"
-						/>*/}
-						<div className=
-							{`
-								form-group ${this.errorClass(formErrors.number)}
-							`}
-						>
-							<div
-								className="labelContainer"
-							>
-								<label
-									className="labelStyle"
-									htmlFor="number"
+									<div
+										className="labelContainer"
+									>
+										<label
+											className="labelStyle"
+											htmlFor="name"
+										>
+											Name
+										</label>
+									</div>
+									<input
+										className="inputStyle"
+										type="text"
+										placeholder="John Appleseed"
+										id="name"
+										name="name"
+										value={name}
+										onChange={this.onChange}
+									/>
+								</div>
+								{/*<FormErrors
+									formErrors={formErrors}
+									id="nameError"
+								/>*/}
+								<div className=
+									{`
+										form-group ${this.errorClass(formErrors.email)}
+									`}
 								>
-									Phone Number
-								</label>
-							</div>
-							<input
-								className="inputStyle"
-								type="tel"
-								placeholder="1234567890"
-								id="phoneNumber"
-								name="number"
-								value={number}
-								onChange={this.onChange}
-							/>
-						</div>
-						{/*<FormErrors
-							formErrors={formErrors}
-							id="numberError"
-						/>*/}
-						<div className=
-							{`
-								form-group ${this.errorClass(formErrors.message)}
-							`}
-						>
-							<div
-								className="labelContainer"
-							>
-								<label
-									className="labelStyle"
-									htmlFor="message"
+									<div
+										className="labelContainer"
+									>
+										<label
+											className="labelStyle"
+											htmlFor="email"
+										>
+											Email
+										</label>
+									</div>
+									<input
+										className="inputStyle"
+										type="email"
+										placeholder="john123@john.com"
+										id="email"
+										name="email"
+										value={email}
+										onChange={this.onChange}
+									/>
+								</div>
+								{/*<FormErrors
+									formErrors={formErrors}
+									id="emailError"
+								/>*/}
+								<div className=
+									{`
+										form-group ${this.errorClass(formErrors.number)}
+									`}
 								>
-									Message
-								</label>
-							</div>
-							<textarea
-								className="inputStyle textareaStyle"
-								rows="12"
-								cols="72"
-								id="message"
-								name="message"
-								value={message}
-								onChange={this.onChange}
-							/>
+									<div
+										className="labelContainer"
+									>
+										<label
+											className="labelStyle"
+											htmlFor="number"
+										>
+											Phone Number
+										</label>
+									</div>
+									<input
+										className="inputStyle"
+										type="tel"
+										placeholder="1234567890"
+										id="phoneNumber"
+										name="number"
+										value={number}
+										onChange={this.onChange}
+									/>
+								</div>
+								{/*<FormErrors
+									formErrors={formErrors}
+									id="numberError"
+								/>*/}
+								<div className=
+									{`
+										form-group ${this.errorClass(formErrors.message)}
+									`}
+								>
+									<div
+										className="labelContainer"
+									>
+										<label
+											className="labelStyle"
+											htmlFor="message"
+										>
+											Message
+										</label>
+									</div>
+									<textarea
+										className="inputStyle textareaStyle"
+										rows="12"
+										cols="72"
+										id="message"
+										name="message"
+										value={message}
+										onChange={this.onChange}
+									/>
+								</div>
+								{/*<FormErrors
+									formErrors={formErrors}
+									id="messageError"
+								/>*/}
+								<button
+									className="buttonStyle"
+									type="submit"
+									disabled={!formValid}
+								>
+									Submit
+								</button>
+							</form>
+							<footer
+								className="footerStyle"
+							>
+								Copyright © 2018 Michael Haviv - All Rights Reserved.
+							</footer>
 						</div>
-						{/*<FormErrors
-							formErrors={formErrors}
-							id="messageError"
-						/>*/}
-						<button
-							className="buttonStyle"
-							type="submit"
-							disabled={!formValid}
-						>
-							Submit
-						</button>
-					</form>
-					<footer
-						className="footerStyle"
-					>
-						Copyright © 2018 Michael Haviv - All Rights Reserved.
-					</footer>
-				</div>
+					</div>
+				</ScrollableAnchor>
 			</div>
 		)
 	}

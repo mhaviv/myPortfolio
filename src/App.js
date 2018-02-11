@@ -5,16 +5,18 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Home from './components/Home';
 
+
 class App extends Component {
+
   render() {
     return (
-    	<div>
-	    	<Header />
-	    	<Home />
-	    	<Skills />
-	    	<Portfolio />
-	    	<Contact />
-    	</div>
+      <div>
+        <Header />
+        <Home />
+        <Skills />
+        <Portfolio />
+        <Contact />
+      </div>
     )
   }
 }
