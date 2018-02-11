@@ -21,4 +21,4 @@ yarn-debug.log*
 yarn-error.log*
 
 /src/config/dev.js
-/functions/config/dev.js
+/functions

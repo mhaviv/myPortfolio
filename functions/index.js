@@ -1,7 +1,8 @@
 /*************************Firebase Cloud Function************************************/
 
 const functions = require('firebase-functions');
-const keys = require('./config/keys');
+const domain = 'sandbox534b67f6aba44c968328339f34014df4.mailgun.org'
+const apiKey = 'key-8051aa94de2ba7b626b7f0f1f8c876cd'
 const mailgun  = require('mailgun-js')({apiKey, domain})
 
 exports.sendMailonWrite = functions.database.ref('/{Id}').onWrite((event) => {
