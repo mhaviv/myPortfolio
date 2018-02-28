@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import "../css/home.css";
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 
-
-
 class Home extends Component {
 	constructor() {
 	  super();
@@ -14,7 +12,7 @@ class Home extends Component {
 	componentWillMount() {
 		configureAnchors({offset: -60, scrollDuration: 1200})
 	}
-	
+
 	render() {
 		return (
 			<ScrollableAnchor

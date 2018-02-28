@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import "../css/contact.css";
 import fire from '../config/keys'
 import { FormErrors } from './FormErrors';
-import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor'
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 
 
 class Contact extends Component {
@@ -30,7 +30,7 @@ class Contact extends Component {
 		configureAnchors({offset: -60, scrollDuration: 1200})
 	}
 
-	onChange = (event) => {
+	onChange(event) {
         const name = event.target.name;
     	const value = event.target.value;
         this.setState({[name]: value},
@@ -94,7 +94,7 @@ class Contact extends Component {
 	}
 
 
-    onSubmit = (event) => {
+    onSubmit(event) {
         event.preventDefault();
 
 
