@@ -53,7 +53,7 @@ class Home extends Component {
 								className="portStandOut"
 							>
 								<a
-									to="/#portfolio"
+									href="#portfolio"
 									className="linkHeadStyle"
 								>
 									Portfolio

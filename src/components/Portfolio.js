@@ -69,9 +69,9 @@ class Portfolio extends Component {
 								/>
 							</li>
 							<button
-								className="visitButton"
+								className="visitButton crossOut"
 							>
-								DOWNLOAD APP
+								<span>DOWNLOAD APP</span>
 							</button>
 						</div>
 					</div>
@@ -122,19 +122,19 @@ class Portfolio extends Component {
 									/>
 								</div>
 							</li>
-							<button
-								className="visitButton"
-								id="mfoButton"
+							<a
+								href="https://marvel-face-off2.herokuapp.com/"
+								className="linkHeadStyle2"
+								target="_blank"
+								rel="noopener noreferrer"
 							>
-								<a
-									href="https://marvel-face-off2.herokuapp.com/"
-									className="linkHeadStyle2"
-									target="_blank"
-									rel="noopener noreferrer"
+								<button
+									className="visitButton"
+									id="mfoButton"
 								>
 										VISIT WEBSITE
-								</a>
-							</button>
+								</button>
+							</a>
 						</div>
 					</div>
 					<img
@@ -203,19 +203,19 @@ class Portfolio extends Component {
 									/>
 								</div>
 							</li>
-							<button
-								className="visitButton"
-								id="hallowButton"
+							<a
+								href="https://hallowgram.herokuapp.com/"
+								className="linkHeadStyle2"
+								target="_blank"
+								rel="noopener noreferrer"
 							>
-								<a
-									href="https://hallowgram.herokuapp.com/"
-									className="linkHeadStyle2"
-									target="_blank"
-									rel="noopener noreferrer"
+								<button
+									className="visitButton"
+									id="hallowButton"
 								>
 										VISIT WEBSITE
-								</a>
-							</button>
+								</button>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -269,19 +269,19 @@ class Portfolio extends Component {
 									/>
 								</div>
 							</li>
-							<button
-								className="visitButton"
-								id="musiButton"
+							<a
+								href="https://musistream.herokuapp.com/"
+								className="linkHeadStyle2"
+								target="_blank"
+								rel="noopener noreferrer"
 							>
-								<a
-									href="https://musistream.herokuapp.com/"
-									className="linkHeadStyle2"
-									target="_blank"
-									rel="noopener noreferrer"
+								<button
+									className="visitButton"
+									id="musiButton"
 								>
 										VISIT WEBSITE
-								</a>
-							</button>
+								</button>
+							</a>
 						</div>
 					</div>
 					<img
