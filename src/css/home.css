@@ -58,6 +58,33 @@
   color: #00adb5;
 }
 
+.mediaLinks {
+	margin: 0.2em 0 0 0;
+}
+
+.mediaStyle {
+	display: inline-block;
+	width: 1.1em;
+	margin: 0 0.1em;
+	border-radius: 10px;
+}
+
+.mediaStyle:hover {
+	background-color: #00adb5;
+}
+
+#myGithub {
+	content: url("../images/myGithub.png");
+}
+
+#myEmail {
+	content: url("../images/myEmail.png");
+}
+
+#myLinkedIn {
+	content: url("../images/myLinkedIn.png");
+}
+
 @media (max-width: 1280px) {
 	.homeContainer {
 		font-size: 2.9em;
