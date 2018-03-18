@@ -64,9 +64,9 @@ class Home extends Component {
 							</span>
 						</div>
 						<div className="mediaLinks">
-							<a href="https://github.com/mhaviv" target="_blank"><div id="myGithub" className="mediaStyle" alt="Github Link" /></a>
-							<a href="mailto:mhaviv18@gmail.com" target="_blank"><div id="myEmail" className="mediaStyle" alt="Email Link" /></a>
-							<a href="https://www.linkedin.com/in/michaelhaviv/" target="_blank"><div id="myLinkedIn" className="mediaStyle" alt="LinkedIn Link" /></a>
+							<a href="https://github.com/mhaviv" target="_blank" rel="noopener noreferrer"><div id="myGithub" className="mediaStyle" alt="Github Link" /></a>
+							<a href="mailto:mhaviv18@gmail.com" target="_blank" rel="noopener noreferrer"><div id="myEmail" className="mediaStyle" alt="Email Link" /></a>
+							<a href="https://www.linkedin.com/in/michaelhaviv/" target="_blank" rel="noopener noreferrer"><div id="myLinkedIn" className="mediaStyle" alt="LinkedIn Link" /></a>
 						</div>
 					</div>
 				</div>

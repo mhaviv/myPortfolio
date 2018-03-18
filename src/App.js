@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <div class="spacer">
+        <div className="spacer">
           &nbsp;
         </div>
         <Home />
