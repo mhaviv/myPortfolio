@@ -254,6 +254,11 @@
 }
 
 @media (min-width: 0px) and (max-width: 412px){
+	.jquerySkillContainer {
+		vertical-align: top;
+		font-size: 0.3;
+	}
+
 	.padRemove {
 		padding-left: 0;
 		padding-right: 0;

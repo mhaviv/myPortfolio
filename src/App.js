@@ -12,6 +12,9 @@ class App extends Component {
     return (
       <div>
         <Header />
+        <div class="spacer">
+          &nbsp;
+        </div>
         <Home />
         <Skills />
         <Portfolio />

@@ -89,7 +89,7 @@ class SkillsChild extends Component {
 					</div>
 				</li>
 				<li
-					className="mySkill"
+					className="mySkill jquerySkillContainer"
 				>
 					<div
 						className="skillsItem"
@@ -190,7 +190,7 @@ class SkillsChild extends Component {
 					<div
 						className="skillText"
 					>
-						Amazon Web Services
+						AWS
 					</div>
 				</li>
 				{/*<li
