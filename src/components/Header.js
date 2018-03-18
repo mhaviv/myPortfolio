@@ -143,7 +143,10 @@ class Header extends Component {
 				<div>
 					<nav>
 						<ul id="ulStyle">
-							<div className="MHHeadContainer">
+							<div 
+								className="MHHeadContainer"
+								onClick={(e) => window.location.href=window.location.href}
+							>
 								<div
 									className="logoContainer"
 									onMouseEnter={this.toggleOn.bind(this)}
