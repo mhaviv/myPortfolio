@@ -226,7 +226,7 @@
 
 @media (min-width: 426px) and (max-width: 471px){
 	.homeContainer {
-		font-size: 1em;
+		font-size: 1.2em;
 	}
 
 	.spacer {
@@ -237,7 +237,7 @@
 
 @media (min-width: 386px) and (max-width: 426px){
 	.homeContainer {
-		font-size: 0.9em;
+		font-size: 1.1em;
 	}
 
 	.spacer {
@@ -248,7 +248,7 @@
 
 @media (min-width: 346px) and (max-width: 386px){
 	.homeContainer {
-		font-size: 0.8em;
+		font-size: 1em;
 	}
 	.spacer {
 		width: 100%;
@@ -258,7 +258,7 @@
 
 @media (min-width: 0px) and (max-width: 346px){
 	.homeContainer {
-		font-size: 0.7em;
+		font-size: 0.9em;
 	}
 	.spacer {
 		width: 100%;

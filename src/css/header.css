@@ -86,31 +86,25 @@ nav {
   color: #00adb5;
 }
 
-@media (min-width: 632px) and (max-width: 745px){
-/* 	.logo {
-		width: 2em;
+@media (max-width: 771px) {
+	.liStyle {
+		font-size: 1.3em;
 	}
+}
 
-	.Box{
-		width: 2em;
-	}
-
-	.nameSoft {
-		width: 6.5em;
-	} */
-
+@media (min-width: 740px) and (max-width: 771px){
 	.liStyle {
 		font-size: 1.1em;
 	}
 }
 
-@media (max-width: 880px) {
+@media (min-width: 676px) and (max-width: 740px){
 	.liStyle {
 		font-size: 1em;
 	}
 }
 
-@media (min-width: 628px) and (max-width: 880px){
+@media (min-width: 628px) and (max-width: 676px){
 	.liStyle {
 		font-size: 0.9em;
 	}
@@ -118,24 +112,40 @@ nav {
 
 @media (min-width: 568px) and (max-width: 628px){
 	.liStyle {
-		font-size: 0.8em;
+		font-size: 1.1em;
+	}
+
+	.nameSoftContainer {
+		display: none;
 	}
 }
 
 @media (min-width: 485px) and (max-width: 568px){
 	.liStyle {
-		font-size: 0.7em;
+		font-size: 1em;
+	}
+
+	.nameSoftContainer {
+		display: none;
 	}
 }
 
 @media (min-width: 365px) and (max-width: 485px){
 	.liStyle {
-		font-size: 0.49em;
+		font-size: 0.85em;
+	}
+
+	.nameSoftContainer {
+		display: none;
 	}
 }
 
 @media (min-width: 0) and (max-width: 365px){
 	.liStyle {
-		font-size: 0.26em;
+		font-size: 0.75em;
+	}
+
+	.nameSoft {
+		display: none;
 	}
 }

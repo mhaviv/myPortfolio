@@ -93,7 +93,7 @@
 
 @media (min-width: 418px) and (max-width: 685px){
 	#quesWorkTog {
-		font-size: 1.7em;
+		font-size: 1.8em;
 		margin-bottom: 2em;
 	}
 
@@ -103,18 +103,18 @@
 	}
 
 	.labelStyle {
-		font-size: 1.1em;
+		font-size: 1.2em;
 	}
 
 	.inputStyle {
 		width: 17em;
-		font-size: 1.1em;
+		font-size: 1.2em;
 		padding-left: 0.5em;
 		margin-bottom: 1em;
 	}
 
 	.buttonStyle {
-		font-size: 1em;
+		font-size: 1.1em;
 		width: 9em;
 		margin: 1em 0;
 		border-width: 0.1em;
@@ -122,13 +122,13 @@
 	}
 
 	.footerStyle {
-		font-size: 0.85em;
+		font-size: 0.95em;
 	}
 }
 
 @media (min-width: 0px) and (max-width: 418px){
 	#quesWorkTog {
-		font-size: 1.3em;
+		font-size: 1.4em;
 		margin-bottom: 2em;
 	}
 
@@ -138,18 +138,18 @@
 	}
 
 	.labelStyle {
-		font-size: 0.9em;
+		font-size: 1em;
 	}
 
 	.inputStyle {
 		width: 15em;
-		font-size: 1em;
+		font-size: 1.1em;
 		padding-left: 0.5em;
 		margin-bottom: 1em;
 	}
 
 	.buttonStyle {
-		font-size: 0.85em;
+		font-size: 0.95em;
 		width: 8em;
 		margin: 1em 0;
 		border-width: 0.1em;
@@ -157,7 +157,7 @@
 	}
 
 	.footerStyle {
-		font-size: 0.65em;
+		font-size: 0.75em;
 	}
 }
 

@@ -141,12 +141,14 @@
 @media (min-width: 406px) and (max-width: 473px){
 	#expertiseContainer {
 		font-size: 1.6em;
+		padding-bottom: 0;
 	}
 }
 
 @media (min-width: 0px) and (max-width: 406px){
 	#expertiseContainer {
 		font-size: 1.4em;
+		padding-bottom: 0;
 	}
 }
 
