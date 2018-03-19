@@ -123,7 +123,7 @@ class Portfolio extends Component {
 								</div>
 							</li>
 							<a
-								href="https://marvel-face-off2.herokuapp.com/"
+								href="https://marvel-face-off.herokuapp.com/"
 								className="linkHeadStyle2"
 								target="_blank"
 								rel="noopener noreferrer"
