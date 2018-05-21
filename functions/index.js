@@ -8,10 +8,10 @@ const domain = 'sandbox534b67f6aba44c968328339f34014df4.mailgun.org';
 const apiKey = 'key-8051aa94de2ba7b626b7f0f1f8c876cd';
 const mailgun = require('mailgun-js')({ apiKey, domain });
 
-exports.sendMailonWrite = functions.database.ref('/{Id}').onWrite((event) => {
-  const user = event.data.val();
+exports.sendMailonWrite = functions.database.ref('/{Id}').onWrite((change) => {
+  const user = change.after.val();
   console.log(user);
-  const data = {
+  const email = {
     from: 'submission@portfolioapp.io',
     to: 'mhaviv18@gmail.com',
     subject: `This is a mail from ${user.name}`,
@@ -22,7 +22,7 @@ exports.sendMailonWrite = functions.database.ref('/{Id}').onWrite((event) => {
         Message: ${user.message}
       `,
   };
-  mailgun.messages().send(data, (error, body) => {
+  mailgun.messages().send(email, (error, body) => {
     console.log(error);
     console.log(body);
   });
