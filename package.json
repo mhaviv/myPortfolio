@@ -10,7 +10,7 @@
     "express": "^4.16.3",
     "firebase": "^4.13.1",
     "firebase-admin": "^5.12.1",
-    "firebase-functions": "^0.8.2",
+    "firebase-functions": "^1.0.2",
     "nodemailer": "^4.6.4",
     "nodemon": "^1.17.4",
     "npm": "^6.0.1",
@@ -40,8 +40,8 @@
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "html-webpack-plugin": "^2.30.1",
-    "style-loader": "^0.20.3",
-    "webpack": "^3.12.0",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.8.3",
     "webpack-dev-server": "^3.1.4"
   }
 }
