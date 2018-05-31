@@ -129,7 +129,7 @@ nav {
 	}
 }
 
-@media (min-width: 365px) and (max-width: 485px){
+@media (min-width: 400px) and (max-width: 485px){
 	.liStyle {
 		font-size: 0.85em;
 	}
@@ -139,9 +139,9 @@ nav {
 	}
 }
 
-@media (min-width: 0) and (max-width: 365px){
+@media (min-width: 0) and (max-width: 400px){
 	.liStyle {
-		font-size: 0.75em;
+		font-size: 0.81em;
 	}
 
 	.nameSoft {
