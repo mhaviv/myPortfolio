@@ -10,18 +10,18 @@
     "express": "^4.16.3",
     "firebase": "^4.13.1",
     "firebase-admin": "^5.12.1",
-    "firebase-functions": "^1.0.2",
-    "nodemailer": "^4.6.4",
-    "nodemon": "^1.17.4",
-    "npm": "^6.0.1",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
+    "firebase-functions": "^1.0.3",
+    "nodemailer": "^4.6.5",
+    "nodemon": "^1.17.5",
+    "npm": "^6.1.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.0",
     "react-scrollable-anchor": "^0.5.0",
     "semantic-ui-react": "^0.78.3",
-    "serve": "^6.5.7"
+    "serve": "^6.5.8"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -41,7 +41,7 @@
     "eslint-config-airbnb": "^16.1.0",
     "html-webpack-plugin": "^2.30.1",
     "style-loader": "^0.21.0",
-    "webpack": "^4.8.3",
+    "webpack": "^4.10.2",
     "webpack-dev-server": "^3.1.4"
   }
 }

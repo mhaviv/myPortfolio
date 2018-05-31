@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import '../css/header.css';
+import Logo from '../images/MH.png';
+import Box from '../images/BoxWhite.png';
+import nameSoft from '../images/nameSoftSD.png';
 // import Skills from './Skills';
 // import Portfolio from './Portfolio';
 // import Contact from './Contact';
@@ -152,15 +155,29 @@ class Header extends Component {
 									onMouseEnter={this.toggleOn.bind(this)}
 									onMouseLeave={this.toggleOff.bind(this)}
 								>
-									<li className="liStyle logo" />
-									<li
-										className={boxClass.join(' ')}
-									/>
+									<li className="liStyle">
+										<img
+											src={Logo}
+											alt="Logo"
+											className="logo"
+										/>
+									</li>
+									<li>
+										<img
+											src={Box}
+											alt="logo box"
+											className={boxClass.join(' ')}
+										/>
+									</li>
 								</div>
 								<div className="nameSoftContainer">
-									<li
-										className={nameSoftClass.join(' ')}
-									/>
+									<li>
+										<img
+											src={nameSoft}
+											alt="Michael Haviv Software Engineer"
+											className={nameSoftClass.join(' ')}
+										/>
+									</li>
 								</div>
 							</div>
 							<div className="navItemsContainer" id="aboutContainer">

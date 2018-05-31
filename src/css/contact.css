@@ -1,3 +1,7 @@
+#contactComponent {
+	overflow: hidden;
+}
+
 .formContainerStyle {
 	font-family: 'Roboto';
 	display: flex;
@@ -25,12 +29,22 @@
 
 .thankYouOn {
 	visibility: visible;
+	text-align: center;
 	color: #00adb5;
 	/* font-family: 'Allerta Stencil'; */
 	text-align: center;
 	font-size: 6em;
 	font-weight: bold;
 	margin: 2em 4em;
+}
+
+.thankYouOn:before {
+    content: "";
+    margin-left: -100%;
+}
+.thankYouOn:after {
+    content: "";
+    margin-right: -100%;
 }
 
 .formErrorContainer {
@@ -89,6 +103,30 @@
 	padding: 2em 2em;
 	font-size: 1em;
 	color: #00adb5;
+}
+
+@media (min-width: 884px) and (max-width: 1057px) {
+	.thankYouOn {
+		font-size: 5em;
+	}
+}
+
+@media (min-width: 703px) and (max-width: 884px) {
+	.thankYouOn {
+		font-size: 4em;
+	}
+}
+
+@media (min-width: 535px) and (max-width: 703px) {
+	.thankYouOn {
+		font-size: 3em;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 535px) {
+	.thankYouOn {
+		font-size: 2em;
+	}
 }
 
 @media (min-width: 418px) and (max-width: 685px){

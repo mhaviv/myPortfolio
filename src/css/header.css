@@ -3,6 +3,7 @@
 	width: 100%;
 	-webkit-transform: translateZ(0);
 	z-index: 3;
+	overflow: hidden;
 }
 
 nav {
@@ -44,7 +45,6 @@ nav {
 }
 
 .nameSoft {
-	content: url("../images/nameSoftSD.png");
 	text-shadow: 1.5px 1.5px #000000;
 	width: 8em;
 	top: 0;
@@ -60,8 +60,8 @@ nav {
 	display: inline-block;
 }
 
+
 .logo {
-	content: url("../images/MH.png");
 	text-shadow: 2px 2px #000000;
 	width: 2.5em;
 	/* height: 2.5em; */
@@ -72,7 +72,6 @@ nav {
 }
 
 .Box {
-	content: url("../images/BoxWhite.png");
 	width: 2.5em;
 	/* height: 2.5em; */
 	top: 0;

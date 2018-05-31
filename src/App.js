@@ -4,13 +4,16 @@ import Skills from './components/Skills';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Home from './components/Home';
+import './css/app.css';
 
 
 class App extends Component {
 
   render() {
     return (
-      <div>
+      <div
+        id="siteContainer"
+      >
         <Header />
         <div className="spacer">
           &nbsp;

@@ -158,10 +158,11 @@ class Contact extends Component {
 
 		return(
 			<div
+				id="contactComponent"
 			>
 				<ScrollableAnchor
 	        		id="contact"
-	     		>
+				>
 					<div>
 						<div
 							className={formResponse ? "thankYouOn animated bounceInDown" : "thankYouOff"}
