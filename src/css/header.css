@@ -31,6 +31,15 @@ nav {
 	text-shadow: 0.8px 0.8px #000000;
 }
 
+.liStyleBox {
+	display: inline-block;
+	flex-basis: content;
+	font-size: 1.3em;
+	padding-right: 0.5em;
+	color: #00adb5;
+	text-shadow: 0.8px 0.8px #000000;
+}
+
 .navItemsContainer {
 	/* justify-content: center; */
 }
@@ -72,11 +81,11 @@ nav {
 }
 
 .Box {
-	width: 2.5em;
+	width: 2.5em; 
 	/* height: 2.5em; */
 	top: 0;
 	left: 0;
-	/* padding-right: 0.5em; */
+	padding-right: 0.5em;
 	position: absolute;
 }
 

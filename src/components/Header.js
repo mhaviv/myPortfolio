@@ -155,7 +155,7 @@ class Header extends Component {
 									onMouseEnter={this.toggleOn.bind(this)}
 									onMouseLeave={this.toggleOff.bind(this)}
 								>
-									<li className="liStyle">
+									<li className="liStyleBox">
 										<img
 											src={Logo}
 											alt="Logo"
