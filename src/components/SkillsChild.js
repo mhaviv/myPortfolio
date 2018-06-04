@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "../css/skills.css";
+import '../css/skills.css';
 
 class SkillsChild extends Component {
 	constructor(props) {
@@ -9,8 +9,6 @@ class SkillsChild extends Component {
 	}
 
 	render() {
-
-
 		return (
 			<ul className="padRemove">
 				<li
@@ -193,51 +191,6 @@ class SkillsChild extends Component {
 						AWS
 					</div>
 				</li>
-				{/*<li
-					className="mySkill"
-				>
-					<div
-						className="skillsItem"
-						id="heroku"
-						name="Heroku"
-					>
-					</div>
-					<div
-						className="skillText"
-					>
-						Heroku
-					</div>
-				</li>
-				<li
-					className="mySkill"
-				>
-					<div
-						className="skillsItem"
-						id="git"
-						name="Git"
-					>
-					</div>
-					<div
-						className="skillText"
-					>
-						Git
-					</div>
-				</li>
-				<li
-					className="mySkill"
-				>
-					<div
-						className="skillsItem"
-						id="github"
-						name="Github"
-					>
-					</div>
-					<div
-						className="skillText"
-					>
-						Github
-					</div>
-				</li>*/}
 			</ul>
 		)
 	}
