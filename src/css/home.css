@@ -4,11 +4,11 @@
 	color: #dddddd;
 	background-color: #eeeeee;
 	z-index: -3;
-	background-image: url('../images/background.png');
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
+	background-image: url('../images/background.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
