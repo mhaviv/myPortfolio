@@ -95,31 +95,36 @@ nav {
 }
 
 @media (max-width: 771px) {
-	.liStyle {
+	.liStyle,
+	.liStyleBox {
 		font-size: 1.3em;
 	}
 }
 
 @media (min-width: 740px) and (max-width: 771px){
-	.liStyle {
+	.liStyle,
+	.liStyleBox {
 		font-size: 1.1em;
 	}
 }
 
 @media (min-width: 676px) and (max-width: 740px){
-	.liStyle {
+	.liStyle,
+	.liStyleBox {
 		font-size: 1em;
 	}
 }
 
 @media (min-width: 628px) and (max-width: 676px){
-	.liStyle {
+	.liStyle,
+	.liStyleBox {
 		font-size: 0.9em;
 	}
 }
 
 @media (min-width: 568px) and (max-width: 628px){
-	.liStyle {
+	.liStyle, 
+	.liStyleBox {
 		font-size: 1.1em;
 	}
 
@@ -129,7 +134,8 @@ nav {
 }
 
 @media (min-width: 485px) and (max-width: 568px){
-	.liStyle {
+	.liStyle,
+	.liStyleBox {
 		font-size: 1em;
 	}
 
@@ -139,7 +145,8 @@ nav {
 }
 
 @media (min-width: 400px) and (max-width: 485px){
-	.liStyle {
+	.liStyle,
+	.liStyleBox {
 		font-size: 0.85em;
 	}
 
@@ -149,8 +156,9 @@ nav {
 }
 
 @media (min-width: 0) and (max-width: 400px){
-	.liStyle {
-		font-size: 0.81em;
+	.liStyle,
+	.liStyleBox {
+		font-size: 0.85em;
 	}
 
 	.nameSoft {
