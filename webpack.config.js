@@ -32,7 +32,7 @@ module.exports = {
             options: {
               modules: true,
               camelCase: true,
-              sourceMap: true,
+              // sourceMap: true,
             },
           },
         ],
