@@ -1,3 +1,4 @@
+import 'animate.css/animate.css';
 import React, { Component } from 'react';
 import '../css/header.css';
 import Logo from '../images/MH.png';

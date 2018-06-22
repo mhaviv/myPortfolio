@@ -8,13 +8,14 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-image: url('../images/background.png');
-	background-repeat: no-repeat;
+	/* background-image: url('../images/background.png'); */
+	/* background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center center;
+	background-position: center center; */
 	font-size: 3em;
 	padding: 4em 3em;
 	line-height: 1.5;
+	height: 100%;
 }
 
 .introDivs {
@@ -176,7 +177,7 @@
 
 	.spacer {
 		width: 100%;
-		height: 30px;
+		height: 35px;
 	}
 }
 
@@ -187,7 +188,7 @@
 
 	.spacer {
 		width: 100%;
-		height: 30px;
+		height: 35px;
 	}
 }
 
@@ -198,7 +199,7 @@
 
 	.spacer {
 		width: 100%;
-		height: 30px;
+		height: 35px;
 	}
 }
 
@@ -209,7 +210,7 @@
 
 	.spacer {
 		width: 100%;
-		height: 30px;
+		height: 35px;
 	}
 }
 
@@ -220,7 +221,7 @@
 
 	.spacer {
 		width: 100%;
-		height: 40px;
+		height: 45px;
 	}
 }
 
@@ -231,7 +232,7 @@
 
 	.spacer {
 		width: 100%;
-		height: 40px;
+		height: 45px;
 	}
 }
 
@@ -242,7 +243,7 @@
 
 	.spacer {
 		width: 100%;
-		height: 50px;
+		height: 55px;
 	}
 }
 
@@ -252,7 +253,7 @@
 	}
 	.spacer {
 		width: 100%;
-		height: 60px;
+		height: 65px;
 	}
 }
 
@@ -262,6 +263,6 @@
 	}
 	.spacer {
 		width: 100%;
-		height: 70px;
+		height: 75px;
 	}
 }
