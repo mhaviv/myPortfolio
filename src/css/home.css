@@ -13,7 +13,7 @@
 	background-size: cover;
 	background-position: center center;
 	font-size: 3em;
-	padding: 4em 3em;
+	padding: 4.3em 3em;
 	line-height: 1.5;
 	height: 100%;
 }
@@ -113,48 +113,56 @@
 @media (min-width: 1064px) and (max-width: 1109px){
 	.homeContainer {
 		font-size: 2.5em;
+		padding: 4.5em 3em;
 	}
 }
 
 @media (min-width: 1022px) and (max-width: 1064px){
 	.homeContainer {
 		font-size: 2.4em;
+		padding: 4.9em 3em;
 	}
 }
 
 @media (min-width: 980px) and (max-width: 1022px){
 	.homeContainer {
 		font-size: 2.3em;
+		padding: 5.2em 3em;
 	}
 }
 
 @media (min-width: 937px) and (max-width: 980px){
 	.homeContainer {
 		font-size: 2.2em;
+		padding: 5.7em 3em;
 	}
 }
 
 @media (min-width: 895px) and (max-width: 937px){
 	.homeContainer {
 		font-size: 2.1em;
+		padding: 6.1em 3em;
 	}
 }
 
 @media (min-width: 852px) and (max-width: 895px){
 	.homeContainer {
 		font-size: 2em;
+		padding: 6.7em 3em;
 	}
 }
 
 @media (min-width: 811px) and (max-width: 852px){
 	.homeContainer {
 		font-size: 1.9em;
+		padding: 7.2em 3em;
 	}
 }
 
 @media (min-width: 768px) and (max-width: 811px){
 	.homeContainer {
 		font-size: 1.8em;
+		padding: 7.8em 3em;
 	}
 }
 

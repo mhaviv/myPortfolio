@@ -165,7 +165,6 @@
 	.skillsItem {
 		width: 7em;
 		height: 7em;
-		/* margin-left: 1.5em; */
 	}
 
 	.skillText {
@@ -183,7 +182,7 @@
 	.skillsItem {
 		width: 6em;
 		height: 6em;
-		/* margin-left: 1em; */
+		margin-top: 1em;
 	}
 
 	.skillText {
@@ -196,7 +195,7 @@
 	.skillsItem {
 		width: 6em;
 		height: 6em;
-		/* margin-left: 1em; */
+		margin-top: 0.8em;
 	}
 
 	.skillText {
@@ -221,7 +220,7 @@
 	.skillsItem {
 		width: 5em;
 		height: 5em;
-		/* margin-left: 1em; */
+		margin-top: 0.8em;
 	}
 
 	.skillText {
@@ -246,7 +245,7 @@
 	.skillsItem {
 		width: 4em;
 		height: 4em;
-		/* margin-left: 1em; */
+		margin-top: 0.5em;
 	}
 
 	.skillText {
@@ -276,7 +275,7 @@
 	.skillsItem {
 		width: 3em;
 		height: 3em;
-		/* margin-left: 1em; */
+		margin-top: 0.5em;
 	}
 
 	.skillText {

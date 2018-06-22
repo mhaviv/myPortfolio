@@ -13,7 +13,7 @@
 }
 
 .portfolioProjContainer{
-	padding: 1.3em 0;
+	padding: 8.2em 0;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
@@ -958,6 +958,10 @@
 }
 
 @media (min-width: 697px) and (max-width: 782px){
+	.portfolioProjContainer {
+		padding: 1.5em 0;
+	}
+
 	.portTextContainer {
 		width: 16em;
 	}
@@ -1107,6 +1111,10 @@
 }
 
 @media (min-width: 590px) and (max-width: 697px){
+	.portfolioProjContainer {
+		padding: 1.5em 0;
+	}
+
 	.portTextContainer {
 		width: 15em;
 		/* margin: 0 4em; */
@@ -1263,6 +1271,10 @@
 }
 
 @media (min-width: 0px) and (max-width: 590px){
+	.portfolioProjContainer {
+		padding: 1.5em 0;
+	}
+
 	.portTextContainer {
 		width: 12em;
 		/* margin-right: 3.8em; */
